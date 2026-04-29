@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [🎨 Blocks](README.md)
+* [Introduction](<README (1).md>)
 * [quickstart](quickstart/README.md)
   * [Cypress Quickstart](quickstart/cypress-quickstart.md)
   * [React Router Quickstart](quickstart/react-router-quickstart.md)
