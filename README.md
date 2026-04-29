@@ -1,32 +1,23 @@
-# Mintlify Starter Kit
+<p align="center">
+  <a href="https://argos-ci.com/?utm_source=github&utm_medium=logo" target="_blank">
+  <img src="https://raw.githubusercontent.com/argos-ci/argos/main/resources/logos/github-readme-banner.jpg" alt="Argos, the open source visual testing platform">
+  </a>
+</p>
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+<h3 align="center">Argos</h3>
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+<p align="center">
+  Argos is the open source visual testing platform for modern engineering teams.
+  <br />
+  <a href="https://argos-ci.com"><strong>Learn more »</strong></a>
+  <br />
+  <br />
+  <a href="https://argos-ci.com/docs"><strong>Docs</strong></a> ·
+  <a href="https://github.com/argos-ci/argos-javascript/tree/main/examples"><strong>Examples</strong></a> ·
+  <a href="https://x.com/argos_ci"><strong>Follow us on X</strong></a> ·
+  <a href="https://argos-ci.com/discord"><strong>Discord</strong></a>
+</p>
 
-### Development
+## Argos documentation
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
-
-```
-npm i -g mintlify
-```
-
-Run the following command at the root of your documentation (where mint.json is)
-
-```
-mintlify dev
-```
-
-### Publishing Changes
-
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
-
-#### Troubleshooting
-
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+This repository hosts the Argos documentation, built using [Docusaurus](https://docusaurus.io/).
