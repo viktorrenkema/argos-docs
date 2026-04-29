@@ -2,7 +2,7 @@
 
 ### 🎨 **Default colors**
 
-Trivial change
+Trivial change #2
 
 - <mark style="color:red;">red</mark> / <mark style="background-color:red;">background</mark> / <i class="fa-duck">:duck:</i>
 - <mark style="color:pink;">pink</mark> / <mark style="background-color:pink;">background</mark> / <i class="fa-kiwi-bird">:kiwi-bird:</i>
