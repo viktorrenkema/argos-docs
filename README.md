@@ -1,23 +1,36 @@
-<p align="center">
-  <a href="https://argos-ci.com/?utm_source=github&utm_medium=logo" target="_blank">
-  <img src="https://raw.githubusercontent.com/argos-ci/argos/main/resources/logos/github-readme-banner.jpg" alt="Argos, the open source visual testing platform">
-  </a>
-</p>
+---
+tags:
+  - '101'
+---
 
-<h3 align="center">Argos</h3>
+# Introduction
 
-<p align="center">
-  Argos is the open source visual testing platform for modern engineering teams.
-  <br />
-  <a href="https://argos-ci.com"><strong>Learn more »</strong></a>
-  <br />
-  <br />
-  <a href="https://argos-ci.com/docs"><strong>Docs</strong></a> ·
-  <a href="https://github.com/argos-ci/argos-javascript/tree/main/examples"><strong>Examples</strong></a> ·
-  <a href="https://x.com/argos_ci"><strong>Follow us on X</strong></a> ·
-  <a href="https://argos-ci.com/discord"><strong>Discord</strong></a>
-</p>
+Argos detects unintended visual changes in your UI, helping teams maintain high product quality as they ship faster.
 
-## Argos documentation
+### Quick start
 
-This repository hosts the Argos documentation, built using [Docusaurus](https://docusaurus.io/).
+Learn how to setup Argos in your project:
+
+[Playwright Quickstart](playwright-quickstart.md)
+
+[Storybook Quickstart](quickstart/storybook-quickstart.md)
+
+[Cypress Quickstart](quickstart/cypress-quickstart.md)
+
+[WebdriverIO Quickstart](webdriverio-quickstart.md)
+
+[Puppeteer Quickstart](quickstart/puppeteer-quickstart.md)
+
+[Next.js Quickstart](next.js-quickstart.md)
+
+[React Router Quickstart](quickstart/react-router-quickstart.md)
+
+[Any E2E Quickstart](quickstart-with-any-test-framework.md)
+
+### Explore
+
+Dig deeper into Argos topics:
+
+* [Baselines & monitoring](baseline-build.md)
+* [Integrations](integrations.md)
+* [Flaky test detection](flaky-test-detection.md)

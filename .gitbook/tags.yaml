@@ -1,0 +1,14 @@
+- tag: '101'
+  label: '101'
+  icon: baby
+  color: blue
+- tag: beta
+  label: Beta
+  icon: rectangle-beta
+  color: $danger
+- tag: success
+  label: Success
+  icon: square-check
+  color: green
+- tag: grey
+  label: Grey
