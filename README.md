@@ -2,12 +2,15 @@
 
 ### 🎨 **Default colors**
 
-Trivial change #4
+Trivial change #5
 
 <i class="fa-elephant" style="color:red;">:elephant:</i>
 <i class="fa-horse" style="color:blue;">:horse:</i>
 <i class="fa-cat" style="color:yellow;">:cat:</i>
 <i class="fa-pig" style="color:cyan;">:pig:</i>
+<i class="fa-github" style="color:invalidvalue;">:github:</i>
+<i class="fa-fish" style="color:#0055ff;">:fish:</i>
+<i class="fa-palette" style="color:#c01d27;">:palette:</i>
 
 - <mark style="color:#c01d27;" data-gitbook-color-text="red">red</mark> / <mark style="background-color:#ffe9e5;" data-gitbook-color-background="red">background</mark> / <i class="fa-duck" style="color:red;">:duck:</i>
 - <mark style="color:#ab278b;" data-gitbook-color-text="pink">pink</mark> / <mark style="background-color:#ffe8fa;" data-gitbook-color-background="pink">background</mark> / <i class="fa-kiwi-bird" style="color:pink;">:kiwi-bird:</i>
