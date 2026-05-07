@@ -7,7 +7,7 @@ The SDK is available as an [npm package](https://www.npmjs.com/package/@argos-ci
 ### Installation
 
 ```sh
-npm install --save-dev @argos-ci/core
+yarn add --save-dev @argos-ci/core // this changed from pnpm install to yarn add
 ```
 
 ### Usage
@@ -16,6 +16,7 @@ To upload screenshots from a `./screenshots` directory, you can use the `upload`
 
 ```js
 import { upload } from "@argos-ci/core";
+// this comment was added
 
 await upload({ root: "./screenshots" });
 ```
