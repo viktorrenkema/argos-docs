@@ -18,7 +18,7 @@ By leveraging GitLab's Personal Access Token, Argos communicates via a dedicated
 
 {% stepper %}
 {% step %}
-### Generate a Personal Access Token in GitLab
+#### Generate a Personal Access Token in GitLab
 
 * Go to [GitLab tokens settings](https://gitlab.com/-/profile/personal_access_tokens?name=argos2\&scopes=api,read_user).
 * Click "Add new token".
@@ -33,7 +33,7 @@ You can also use a [Project Access Token](https://docs.gitlab.com/ee/user/projec
 {% endstep %}
 
 {% step %}
-### Configure the Generated Token in Argos
+#### Configure the Generated Token in Argos
 
 * From the dashboard, select your team or your personal account from the scope selector
 * Select the **Settings** tab and go to the **Integrations** section
@@ -44,7 +44,7 @@ You can also use a [Project Access Token](https://docs.gitlab.com/ee/user/projec
 {% endstep %}
 
 {% step %}
-### Link GitLab Project to Argos
+#### Link GitLab Project to Argos
 
 * From the dashboard, select your team or your personal account from the scope selector
 * Select the **Projects** tab

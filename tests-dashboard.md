@@ -12,13 +12,13 @@ _A project Tests dashboard with flakiness metrics_
 
 {% stepper %}
 {% step %}
-### Open your project
+#### Open your project
 
 Open your project in Argos.
 {% endstep %}
 
 {% step %}
-### Go to Tests
+#### Go to Tests
 
 Click the **Tests** tab.
 {% endstep %}

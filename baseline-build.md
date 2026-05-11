@@ -16,31 +16,31 @@ Argos selects the baseline build by finding the most recent **candidate build** 
 
 {% stepper %}
 {% step %}
-### Has the same build name as the triggered build
+#### Has the same build name as the triggered build
 
 The candidate must have the same build name as the build that triggered the comparison.
 {% endstep %}
 
 {% step %}
-### All framework tests passed
+#### All framework tests passed
 
 The candidate build's framework tests must have succeeded.
 {% endstep %}
 
 {% step %}
-### Build is not marked as subset
+#### Build is not marked as subset
 
 The candidate build must not be marked as a [_subset_](subset-builds.md).
 {% endstep %}
 
 {% step %}
-### Be auto-approved, manually approved or orphan
+#### Be auto-approved, manually approved or orphan
 
 The candidate build must be one of: auto-approved, manually approved, or orphan.
 {% endstep %}
 
 {% step %}
-### Its commit is an ancestor of the merge base
+#### Its commit is an ancestor of the merge base
 
 The candidate build's commit must be an ancestor of the merge base between the triggered build's commit and the baseline branch.
 {% endstep %}

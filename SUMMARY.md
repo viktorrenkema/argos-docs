@@ -1,6 +1,7 @@
 # Table of contents
 
-* [🎨 Blocks](README.md)
+* [Codeblock](README.md)
+* [🎨 Blocks](<README (2).md>)
 * [Introduction](<README (1).md>)
 * [quickstart](quickstart/README.md)
   * [Cypress Quickstart](quickstart/cypress-quickstart.md)

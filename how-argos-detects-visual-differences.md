@@ -25,25 +25,25 @@ Our full diff implementation is also open source and can be [inspected here](htt
 
 {% stepper %}
 {% step %}
-### Image normalization
+#### Image normalization
 
 Resolution, color space, and alpha channels are aligned.
 {% endstep %}
 
 {% step %}
-### Multiple diff passes
+#### Multiple diff passes
 
 Each pass uses different thresholds to detect both strict and subtle changes.
 {% endstep %}
 
 {% step %}
-### Pixel clustering
+#### Pixel clustering
 
 Random noise is separated from meaningful visual changes.
 {% endstep %}
 
 {% step %}
-### Final diff output
+#### Final diff output
 
 A diff mask and score are produced for review in Argos.
 {% endstep %}

@@ -15,7 +15,7 @@ Puppeteer already offers a command to take screenshots. The official Argos Puppe
 
 {% stepper %}
 {% step %}
-### Install package
+#### Install package
 
 {% code title="Install packages" %}
 ```
@@ -25,7 +25,7 @@ npm install --save-dev @argos-ci/cli @argos-ci/puppeteer
 {% endstep %}
 
 {% step %}
-### Use in your tests
+#### Use in your tests
 
 `argosScreenshot` command stabilizes the UI and takes a screenshot.
 

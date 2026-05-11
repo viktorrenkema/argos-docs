@@ -4,7 +4,7 @@ Efficiently capture web page screenshots across frameworks with Argos: A step-by
 
 {% stepper %}
 {% step %}
-### Using Playwright (https://argos-ci.com/docs/screenshot-pages-script#using-playwright)
+#### Using Playwright (https://argos-ci.com/docs/screenshot-pages-script#using-playwright)
 
 Below is a step-by-step script for Playwright to take screenshots of specified pages. This script utilizes the Argos Playwright integration for streamlined screenshot capture:
 
@@ -33,7 +33,7 @@ for (const { name, path } of pages) {
 {% endstep %}
 
 {% step %}
-### Using Cypress (https://argos-ci.com/docs/screenshot-pages-script#using-cypress)
+#### Using Cypress (https://argos-ci.com/docs/screenshot-pages-script#using-cypress)
 
 Here's how you can capture screenshots within Cypress. The script navigates to each page and uses the Argos Cypress command for screenshots:
 
@@ -59,7 +59,7 @@ for (const { name, path } of pages) {
 {% endstep %}
 
 {% step %}
-### Using Puppeteer (https://argos-ci.com/docs/screenshot-pages-script#using-puppeteer)
+#### Using Puppeteer (https://argos-ci.com/docs/screenshot-pages-script#using-puppeteer)
 
 For Puppeteer users, this script demonstrates how to capture page screenshots effectively. It employs Puppeteer for navigation and screenshot capture:
 

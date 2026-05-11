@@ -4,13 +4,13 @@ Effortlessly track your monthly usage with Argos. Access your team's usage detai
 
 {% stepper %}
 {% step %}
-### Access your team
+#### Access your team
 
 From the dashboard, select your team from the scope selector.
 {% endstep %}
 
 {% step %}
-### Go to billing
+#### Go to billing
 
 Select the **Settings** tab and go to the **Billing** section.
 {% endstep %}

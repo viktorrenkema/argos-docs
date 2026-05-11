@@ -18,21 +18,21 @@ Note: Your CI pipeline must also run on the default branch (main, production, et
 
 {% stepper %}
 {% step %}
-### Feature development
+#### Feature development
 
 * A developer creates a feature (or bugfix) branch and commits changes.
 * Optionally, a pull request (PR) is opened.
 {% endstep %}
 
 {% step %}
-### Visual tests in CI
+#### Visual tests in CI
 
 * During these tests, your test framework (Playwright, Cypress, etc.) captures screenshots of the app. Argos offers [SDKs](<README (1).md>) for easy integration with popular frameworks.
 * At the end of the tests, screenshots are uploaded to Argos automatically with the SDK, or manually using the Argos CLI.
 {% endstep %}
 
 {% step %}
-### Comparison with baseline
+#### Comparison with baseline
 
 * Argos receives the build containing screenshots and metadata.
 * It automatically determines the [baseline build](baseline-build.md) using Git history analysis and other criteria.
@@ -40,7 +40,7 @@ Note: Your CI pipeline must also run on the default branch (main, production, et
 {% endstep %}
 
 {% step %}
-### Results & notifications
+#### Results & notifications
 
 * The build is complete once all screenshots have been compared:
   * ✅ No differences → commit status set to _success_.
@@ -51,7 +51,7 @@ Note: Your CI pipeline must also run on the default branch (main, production, et
 {% endstep %}
 
 {% step %}
-### Approval process
+#### Approval process
 
 * The team reviews the changes in the Argos app:
   * Each screenshot change can be approved or rejected.
@@ -104,25 +104,25 @@ In this mode, your tests capture screenshots on the chosen branch (e.g., main or
 
 {% stepper %}
 {% step %}
-### Enable monitoring mode
+#### Enable monitoring mode
 
 * Activate monitoring for periodic checks or pre-release validation.
 {% endstep %}
 
 {% step %}
-### Run periodic visual tests
+#### Run periodic visual tests
 
 * Your tests capture screenshots on the target branch (daily, weekly, or before a release).
 {% endstep %}
 
 {% step %}
-### Compare with latest approved build
+#### Compare with latest approved build
 
 * Screenshots are compared only with the most recently approved build.
 {% endstep %}
 
 {% step %}
-### Notify on differences
+#### Notify on differences
 
 * If differences are found, notifications are sent.
 * Changes must then be reviewed, approved, or corrected.

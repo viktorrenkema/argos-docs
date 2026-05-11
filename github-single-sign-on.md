@@ -6,7 +6,7 @@ Streamline access with GitHub SSO: integrate your Argos team and GitHub organiza
 
 {% stepper %}
 {% step %}
-### Enable GitHub SSO
+#### Enable GitHub SSO
 
 1. Navigate to team settings.
 2. Click "Enable and Pay" under the "GitHub Single Sign-On" section.

@@ -33,19 +33,19 @@ To enable spend management, you must have an **Owner** role on your team.
 
 {% stepper %}
 {% step %}
-### From the dashboard
+#### From the dashboard
 
 Select your team from the scope selector.
 {% endstep %}
 
 {% step %}
-### Open team settings
+#### Open team settings
 
 Select the **Settings** tab and go to the **Billings** section.
 {% endstep %}
 
 {% step %}
-### Enable Spend Management
+#### Enable Spend Management
 
 Scroll to **Spend Management** and enable the switch:
 
@@ -53,13 +53,13 @@ Scroll to **Spend Management** and enable the switch:
 {% endstep %}
 
 {% step %}
-### Configure spend amount
+#### Configure spend amount
 
 Set your spend amount at which you want to be notified or take action.
 {% endstep %}
 
 {% step %}
-### Pause projects (optional)
+#### Pause projects (optional)
 
 Choose to [pause all projects](spend-management.md#pausing-projects) when you reach your spend amount.
 {% endstep %}
@@ -77,25 +77,25 @@ Argos provides an option to automatically pause the builds for all of your proje
 
 {% stepper %}
 {% step %}
-### Enable and set spend amount
+#### Enable and set spend amount
 
 In the **Spend Management** section of your team's settings, enable and set your [**spend amount**](spend-management.md#managing-your-spend-amount).
 {% endstep %}
 
 {% step %}
-### Ensure Pause builds is enabled
+#### Ensure Pause builds is enabled
 
 Ensure the **Pause builds** switch is **Enabled**.
 {% endstep %}
 
 {% step %}
-### Confirm the action
+#### Confirm the action
 
 Confirm the action by entering the team slug and select **Continue**.
 {% endstep %}
 
 {% step %}
-### Automatic pause when reached
+#### Automatic pause when reached
 
 When your team reaches the spend amount, Argos automatically pauses the builds for all projects on your team.
 

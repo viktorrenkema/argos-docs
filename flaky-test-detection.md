@@ -10,19 +10,19 @@ _Example of the flaky indicator in a build review_
 
 {% stepper %}
 {% step %}
-### Open a build
+#### Open a build
 
 Open any build in Argos.
 {% endstep %}
 
 {% step %}
-### Spot the flaky badge
+#### Spot the flaky badge
 
 Spot the flaky badge beside each changed test.
 {% endstep %}
 
 {% step %}
-### See stability details
+#### See stability details
 
 Hover over the badge to see details about the test's stability.
 {% endstep %}

@@ -16,7 +16,7 @@ You can skip a build in two ways.
 
 {% stepper %}
 {% step %}
-### Environment variable
+#### Environment variable
 
 Set the environment variable `ARGOS_SKIPPED` to `"true"` in your CI configuration.
 
@@ -41,7 +41,7 @@ This reports a successful Argos check without uploading screenshots.
 {% endstep %}
 
 {% step %}
-### Using the CLI
+#### Using the CLI
 
 You can also explicitly create a skipped build using the CLI.
 

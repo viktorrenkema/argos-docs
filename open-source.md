@@ -22,19 +22,19 @@ If you wish to apply for sponsorship for your OSS (Open Source Software) project
 
 {% stepper %}
 {% step %}
-### Confirm eligibility
+#### Confirm eligibility
 
 Make sure your project fulfills all the sponsorship conditions outlined above.
 {% endstep %}
 
 {% step %}
-### Evaluate needs
+#### Evaluate needs
 
 Ensure that your project needs this level of sponsorship. Our free plan is quite generous and is often sufficient for smaller projects.
 {% endstep %}
 
 {% step %}
-### Email Argos
+#### Email Argos
 
 Send us an email at [contact@argos-ci.com](mailto:contact@argos-ci.com). In the email, confirm that your project meets all the sponsorship criteria and explain why the free tier of Argos doesn't cover your project's needs. Please include your Argos team slug and a link to your open source repository in the email.
 {% endstep %}

@@ -163,31 +163,31 @@ To set a default role in a project:
 
 {% stepper %}
 {% step %}
-### Navigate to Settings
+#### Navigate to Settings
 
 Go to the project's Settings page.
 {% endstep %}
 
 {% step %}
-### Access Access management
+#### Access Access management
 
 Scroll down to the Access management section.
 {% endstep %}
 
 {% step %}
-### Set default contributor level
+#### Set default contributor level
 
 Click on Set default contributor level.
 {% endstep %}
 
 {% step %}
-### Choose role
+#### Choose role
 
 Select the desired default role (Viewer, Reviewer, or Admin).
 {% endstep %}
 
 {% step %}
-### Save
+#### Save
 
 Click Save.
 {% endstep %}

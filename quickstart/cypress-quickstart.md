@@ -10,7 +10,7 @@ To get the most out of this guide, you’ll need to:
 
 {% stepper %}
 {% step %}
-### Install
+#### Install
 
 Get the Argos Cypress SDK.
 
@@ -52,7 +52,7 @@ Read the [CLI documentation](../argos-command-line-interface-cli.md) if you need
 {% endstep %}
 
 {% step %}
-### Add cy.argosScreenshot command
+#### Add cy.argosScreenshot command
 
 Add this line to your `cypress/support/e2e.js` file:
 
@@ -76,7 +76,7 @@ If you use TypeScript, update your `tsconfig.json`:
 {% endstep %}
 
 {% step %}
-### Register Argos in Cypress config
+#### Register Argos in Cypress config
 
 ```js
 const { defineConfig } = require("cypress");
@@ -101,7 +101,7 @@ module.exports = defineConfig({
 {% endstep %}
 
 {% step %}
-### Take screenshots
+#### Take screenshots
 
 Use `argosScreenshot` helper to capture stable screenshots in your E2E tests.
 

@@ -14,19 +14,19 @@ There are three configurations for summary checks:
 
 {% stepper %}
 {% step %}
-### Add a summary check only if there is more than one build
+#### Add a summary check only if there is more than one build
 
 This is recommended for most projects. It adds a summary check to help you quickly see the combined status of multiple builds.
 {% endstep %}
 
 {% step %}
-### Always add a summary check
+#### Always add a summary check
 
 This option is useful if your project conditionally runs builds, such as Argos builds. It ensures that the summary status check will always be present.
 {% endstep %}
 
 {% step %}
-### Never add a summary check
+#### Never add a summary check
 
 Select this if you wish to disable summary checks. This might be preferred if summary checks are not providing additional value to your project's workflow.
 
@@ -40,25 +40,25 @@ To configure summary checks for your project, follow these steps:
 
 {% stepper %}
 {% step %}
-### Navigate to the project settings in Argos
+#### Navigate to the project settings in Argos
 
 Open your project in Argos and go to its settings.
 {% endstep %}
 
 {% step %}
-### Locate the 'Summary Checks' section
+#### Locate the 'Summary Checks' section
 
 Find the section labeled "Summary Checks" within the project settings.
 {% endstep %}
 
 {% step %}
-### Choose the appropriate option
+#### Choose the appropriate option
 
 Select the configuration that best fits your project's needs (see Options for Summary Checks).
 {% endstep %}
 
 {% step %}
-### Save
+#### Save
 
 Click `Save` to apply the changes.
 {% endstep %}

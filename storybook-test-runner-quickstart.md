@@ -17,7 +17,7 @@ If you use a legacy version of Storybook (\<v8), follow our [legacy Storybook qu
 
 {% stepper %}
 {% step %}
-### Install
+#### Install
 
 {% tabs %}
 {% tab title="npm" %}
@@ -49,7 +49,7 @@ Read the [CLI documentation](argos-command-line-interface-cli.md) if you need in
 {% endstep %}
 
 {% step %}
-### Update your package.json
+#### Update your package.json
 
 Add the following scripts to your `package.json`:
 
@@ -69,7 +69,7 @@ package.json
 {% endstep %}
 
 {% step %}
-### Capture screenshots
+#### Capture screenshots
 
 Add `.storybook/test-runner.ts` file to your project:
 
@@ -94,7 +94,7 @@ Add `./screenshots` to your `.gitignore` file, to avoid uploading screenshots to
 {% endstep %}
 
 {% step %}
-### Setup CI to run tests and upload screenshots
+#### Setup CI to run tests and upload screenshots
 
 Below is a complete GitHub Actions workflow to build your Storybook, run tests, capture screenshots, and upload them to Argos. If you use another CI provider, adapt the steps accordingly.
 

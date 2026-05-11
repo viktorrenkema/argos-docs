@@ -18,7 +18,7 @@ If you use a legacy version of Storybook (\<v8), follow our [legacy Storybook qu
 
 {% stepper %}
 {% step %}
-### Install
+#### Install
 
 {% tabs %}
 {% tab title="npm" %}
@@ -50,7 +50,7 @@ Read the [CLI documentation](../argos-command-line-interface-cli.md) if you need
 {% endstep %}
 
 {% step %}
-### Add Argos plugin to your Vitest configuration
+#### Add Argos plugin to your Vitest configuration
 
 The Argos plugin for Vitest captures screenshots of your stories and uploads them to Argos. Add it to your Vitest or Vite configuration file (e.g., `vitest.config.ts` or `vite.config.ts`):
 
@@ -115,7 +115,7 @@ Be sure to have already installed the [Storybook Vitest Addon](https://storybook
 {% endstep %}
 
 {% step %}
-### Capture screenshots
+#### Capture screenshots
 
 All your stories will be automatically captured when you run the tests.
 
@@ -143,7 +143,7 @@ Add `./screenshots` to your `.gitignore` file, to avoid uploading screenshots to
 {% endstep %}
 
 {% step %}
-### Setup CI to run tests and upload screenshots
+#### Setup CI to run tests and upload screenshots
 
 Argos is just a plugin running on top of Storybook Vitest Addon, so you can run the tests in your CI as you would normally do with Vitest.
 

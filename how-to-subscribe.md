@@ -10,13 +10,13 @@ A 14-day trial is available for the first team upgrade.
 
 {% stepper %}
 {% step %}
-### Create or open a team
+#### Create or open a team
 
 If you do not have a team yet, [create a new team](https://app.argos-ci.com/teams/new). Otherwise, go to the settings of your existing team.
 {% endstep %}
 
 {% step %}
-### Upgrade plan
+#### Upgrade plan
 
 In the Plan section, click on the `Upgrade` button.
 
@@ -24,7 +24,7 @@ In the Plan section, click on the `Upgrade` button.
 {% endstep %}
 
 {% step %}
-### Choose team
+#### Choose team
 
 Choose the team you wish to upgrade.
 
@@ -32,13 +32,13 @@ Choose the team you wish to upgrade.
 {% endstep %}
 
 {% step %}
-### Complete payment
+#### Complete payment
 
 You will be redirected to Stripe Checkout. Complete the payment form.
 {% endstep %}
 
 {% step %}
-### Confirmation
+#### Confirmation
 
 After the payment process is successfully completed, you will receive a confirmation email.
 {% endstep %}

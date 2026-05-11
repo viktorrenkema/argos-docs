@@ -17,7 +17,7 @@ If you use a recent version of Storybook (>v8), follow our [modern Storybook gui
 
 {% stepper %}
 {% step %}
-### Install
+#### Install
 
 {% tabs %}
 {% tab title="npm" %}
@@ -57,7 +57,7 @@ Read the [CLI documentation](argos-command-line-interface-cli.md) if you need in
 {% endstep %}
 
 {% step %}
-### Capture screenshots
+#### Capture screenshots
 
 There are two ways to capture screenshots of your Storybook:
 
@@ -88,7 +88,7 @@ Add `./screenshots` to your `.gitignore` file, to avoid uploading screenshots to
 {% endstep %}
 
 {% step %}
-### Upload screenshots on CI
+#### Upload screenshots on CI
 
 Add this command to your CI pipeline to upload the screenshots to Argos.
 

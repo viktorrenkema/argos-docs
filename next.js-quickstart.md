@@ -15,7 +15,7 @@ To get the most out of this guide, you’ll need to:
 
 {% stepper %}
 {% step %}
-### Install
+#### Install
 
 Get the Argos Playwright SDK.
 
@@ -55,7 +55,7 @@ bun add --dev @argos-ci/playwright
 {% endstep %}
 
 {% step %}
-### Setup Argos in your Playwright config
+#### Setup Argos in your Playwright config
 
 The Argos reporter seamlessly uploads screenshots and traces to Argos in real-time.
 
@@ -102,7 +102,7 @@ Playwright's [recording options](https://playwright.dev/docs/test-use-options#re
 {% endstep %}
 
 {% step %}
-### Take screenshots
+#### Take screenshots
 
 Use `argosScreenshot` helper to capture stable screenshots in your E2E tests.
 

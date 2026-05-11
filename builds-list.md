@@ -10,13 +10,13 @@ _A project Builds list with status badges, change counts, and filters_
 
 {% stepper %}
 {% step %}
-### Open your project
+#### Open your project
 
 Open your project in Argos.
 {% endstep %}
 
 {% step %}
-### Go to Builds
+#### Go to Builds
 
 Click the **Builds** tab.
 {% endstep %}

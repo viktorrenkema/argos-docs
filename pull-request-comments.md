@@ -14,19 +14,19 @@ If you would like to stop automatic comments from appearing on your pull request
 
 {% stepper %}
 {% step %}
-### Go to project Settings
+#### Go to project Settings
 
 Open your project Settings in Argos.
 {% endstep %}
 
 {% step %}
-### Locate the setting
+#### Locate the setting
 
 In the "Connected Git Repository" section, find the checkbox for "Enable pull request comments".
 {% endstep %}
 
 {% step %}
-### Disable the feature
+#### Disable the feature
 
 Uncheck this box to disable the feature and save the settings.
 

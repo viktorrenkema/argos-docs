@@ -12,7 +12,7 @@ To get the most out of this guide, you’ll need to:
 
 {% stepper %}
 {% step %}
-### Install
+#### Install
 
 {% tabs %}
 {% tab title="npm" %}
@@ -52,7 +52,7 @@ Read the [CLI documentation](argos-command-line-interface-cli.md) if you need in
 {% endstep %}
 
 {% step %}
-### Upload screenshots on CI
+#### Upload screenshots on CI
 
 Add this command to your CI pipeline to upload the screenshots to Argos.
 

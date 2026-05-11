@@ -180,7 +180,7 @@ To stabilize tests, Argos injects a script before taking screenshots. This scrip
 
 {% stepper %}
 {% step %}
-### Allow the Argos script in your CSP
+#### Allow the Argos script in your CSP
 
 The `@argos-ci/playwright` package provides a `getCSPScriptHash` method to retrieve the hash of the script injected by Argos. Additionally, Argos requires the `'unsafe-eval'` directive to function properly.
 
@@ -205,7 +205,7 @@ export default defineConfig({
 {% endstep %}
 
 {% step %}
-### Configure Playwright to bypass CSP
+#### Configure Playwright to bypass CSP
 
 If you do not have the flexibility to add custom CSP headers for Playwright test execution, you can [configure Playwright to bypass CSP](https://playwright.dev/docs/api/class-testoptions#test-options-bypass-csp) in your Playwright configuration:
 

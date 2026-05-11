@@ -4,13 +4,13 @@ Seamlessly manage your Argos subscription: view invoices, update payment methods
 
 {% stepper %}
 {% step %}
-### Navigate to your team settings
+#### Navigate to your team settings
 
 Open your team's settings page in Argos.
 {% endstep %}
 
 {% step %}
-### Click the "Manage your subscription" link
+#### Click the "Manage your subscription" link
 
 Click the "Manage your subscription" link located within the settings. After performing this step, you will be redirected to the platform of your payment provider.
 {% endstep %}

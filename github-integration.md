@@ -25,19 +25,19 @@ Argos provides a dedicated GitHub App that connects directly to your repositorie
 
 {% stepper %}
 {% step %}
-### Visit the Argos app page on GitHub
+#### Visit the Argos app page on GitHub
 
 Go to: https://github.com/apps/argos-ci
 {% endstep %}
 
 {% step %}
-### Configure installation
+#### Configure installation
 
 Click on "Configure" and select the organization where you want to install Argos.
 {% endstep %}
 
 {% step %}
-### Complete the installation
+#### Complete the installation
 
 Follow the prompts to complete the installation.
 {% endstep %}
@@ -47,13 +47,13 @@ Follow the prompts to complete the installation.
 
 {% stepper %}
 {% step %}
-### Sign in and create project
+#### Sign in and create project
 
 Sign in to Argos and click on "Create a new project".
 {% endstep %}
 
 {% step %}
-### Choose GitHub as provider
+#### Choose GitHub as provider
 
 Choose GitHub as your provider, then click "Import your repository".
 {% endstep %}
@@ -63,19 +63,19 @@ Choose GitHub as your provider, then click "Import your repository".
 
 {% stepper %}
 {% step %}
-### Open Argos app page on GitHub
+#### Open Argos app page on GitHub
 
 Go to the [Argos app page on GitHub](https://github.com/apps/argos-ci) and click "Configure".
 {% endstep %}
 
 {% step %}
-### Select organization
+#### Select organization
 
 Select the organization where you want to manage repository access.
 {% endstep %}
 
 {% step %}
-### Choose repositories
+#### Choose repositories
 
 Under "Repository access," choose "Only select repositories" and select the specific repositories you wish to share with Argos.
 {% endstep %}
@@ -133,55 +133,55 @@ If you prefer to use Argos without granting full content access to your reposito
 
 {% stepper %}
 {% step %}
-### Select your team scope
+#### Select your team scope
 
 From the dashboard, select your team from the scope selector.
 {% endstep %}
 
 {% step %}
-### Open integrations settings
+#### Open integrations settings
 
 Select the **Settings** tab and go to the **Integrations** section.
 {% endstep %}
 
 {% step %}
-### Find GitHub without content access
+#### Find GitHub without content access
 
 Scroll to "GitHub without content access".
 {% endstep %}
 
 {% step %}
-### Install GitHub App
+#### Install GitHub App
 
 Click **Install GitHub App**.
 {% endstep %}
 
 {% step %}
-### Choose repositories on GitHub
+#### Choose repositories on GitHub
 
 On GitHub, choose the specific repositories where you want to install the Argos app.
 {% endstep %}
 
 {% step %}
-### Return to Argos projects
+#### Return to Argos projects
 
 Back in Argos, go to the **Projects** tab.
 {% endstep %}
 
 {% step %}
-### Create a new project
+#### Create a new project
 
 Click **Create a new project** at the top right.
 {% endstep %}
 
 {% step %}
-### Continue with GitHub (no-content access)
+#### Continue with GitHub (no-content access)
 
 Select **Continue with GitHub (no-content access)**.
 {% endstep %}
 
 {% step %}
-### Choose repository to connect
+#### Choose repository to connect
 
 Choose the repository you want to connect.
 {% endstep %}

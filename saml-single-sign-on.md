@@ -16,31 +16,31 @@ Once enabled, team members can authenticate with your configured identity provid
 
 {% stepper %}
 {% step %}
-### Ensure you are an owner
+#### Ensure you are an owner
 
 Ensure you are an [owner](team-members-and-roles.md#owner-role) of the team.
 {% endstep %}
 
 {% step %}
-### Select the team scope
+#### Select the team scope
 
 From the dashboard, select the team in the scope selector.
 {% endstep %}
 
 {% step %}
-### Open Security and Privacy
+#### Open Security and Privacy
 
 Open the **Settings** tab, then go to **Security and Privacy**.
 {% endstep %}
 
 {% step %}
-### Configure SAML Single Sign-On
+#### Configure SAML Single Sign-On
 
 In **SAML Single Sign-On**, click **Configure** and follow the setup flow for your identity provider.
 {% endstep %}
 
 {% step %}
-### Optionally enforce SAML
+#### Optionally enforce SAML
 
 Optionally enforce SAML SSO for all team members after confirming authentication works.
 {% endstep %}
@@ -52,19 +52,19 @@ For additional security, you can enforce SAML so team members can only access te
 
 {% stepper %}
 {% step %}
-### Confirm owner and SAML auth
+#### Confirm owner and SAML auth
 
 Ensure you are an [owner](team-members-and-roles.md#owner-role) and currently authenticated with SAML.
 {% endstep %}
 
 {% step %}
-### Open SAML settings
+#### Open SAML settings
 
 Go to **Team Settings -> Security and Privacy -> SAML Single Sign-On**.
 {% endstep %}
 
 {% step %}
-### Require SAML for team members
+#### Require SAML for team members
 
 Enable **Require team members to log in with SAML**.
 {% endstep %}
@@ -80,19 +80,19 @@ After SAML is configured, team members can sign in using SAML SSO:
 
 {% stepper %}
 {% step %}
-### Start SAML sign-in
+#### Start SAML sign-in
 
 On the login page, click **Continue with SAML SSO** and enter your team slug.
 {% endstep %}
 
 {% step %}
-### Redirect to identity provider
+#### Redirect to identity provider
 
 Click **Continue with SAML SSO** again to be redirected to your identity provider.
 {% endstep %}
 
 {% step %}
-### Complete authentication
+#### Complete authentication
 
 Complete authentication to access Argos.
 {% endstep %}

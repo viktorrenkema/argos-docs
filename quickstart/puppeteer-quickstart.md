@@ -12,7 +12,7 @@ To get the most out of this guide, you’ll need to:
 
 {% stepper %}
 {% step %}
-### Install
+#### Install
 
 {% tabs %}
 {% tab title="npm" %}
@@ -44,7 +44,7 @@ Read the [CLI documentation](../argos-command-line-interface-cli.md) if you need
 {% endstep %}
 
 {% step %}
-### Take screenshots
+#### Take screenshots
 
 Use `argosScreenshot` helper to capture stable screenshots in your E2E tests.
 
@@ -69,7 +69,7 @@ Tip: Check out our guides to [screenshot multiple pages](../capture-screenshots-
 {% endstep %}
 
 {% step %}
-### Setup your CI
+#### Setup your CI
 
 Add this command to your CI pipeline to upload the screenshots to Argos.
 

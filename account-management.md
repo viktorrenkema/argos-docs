@@ -33,7 +33,7 @@ To manage login connections:
 
 {% stepper %}
 {% step %}
-### Manage login connections
+#### Manage login connections
 
 * Select your profile picture in the top-right corner of the dashboard.
 * Choose **Settings**.
