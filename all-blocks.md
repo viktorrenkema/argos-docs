@@ -1,18 +1,22 @@
 # All blocks
 
+
+
+<table data-full-width="true"><thead><tr><th data-type="number"></th><th data-type="checkbox"></th><th><select multiple><option value="ckeSylaGDY0E" label="A" color="blue"></option><option value="dhqEsOmLs0WI" label="B" color="blue"></option><option value="37mNjDuTfiQv" label="C" color="blue"></option></select></th><th data-type="users" data-multiple></th><th data-type="content-ref"></th><th data-type="rating" data-max="5"></th><th data-type="files"></th><th data-type="image"></th></tr></thead><tbody><tr><td>123</td><td>true</td><td><span data-option="37mNjDuTfiQv">C, </span><span data-option="dhqEsOmLs0WI">B</span></td><td><a href="/broken/users/vRgjcsOprrMak4a2cWhgFXdGOEC3">Broken link</a></td><td><a href="/broken/pages/Z4b7PgWgT9x2UC8ts3li">Broken link</a></td><td>4</td><td></td><td></td></tr><tr><td>null</td><td>false</td><td><span data-option="dhqEsOmLs0WI">B</span></td><td></td><td></td><td>4</td><td></td><td></td></tr></tbody></table>
+
 ## Heading 1
 
-### Heading 2
+### <sup><sub>~~_<mark style="color:$danger;background-color:cyan;">**Heading 2**</mark>_~~<sub></sup>
 
 #### Heading 3
+
+Gitbook is a block-based editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page.
 
 **Bold paragraph**
 
 _Italic paragraph_
 
 ~~Strikethrough paragraph~~
-
-Gitbook is a block-based editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page.
 
 
 
@@ -32,7 +36,15 @@ Gitbook is a block-based editor, meaning you can add many kinds of blocks to you
 * Dos 2
 * Tres 3
 
-<code class="expression">space.vars.MY_NAME</code>
+
+
+***
+
+
+
+Variable: <code class="expression">space.vars.MY_NAME</code>
+
+Inline formula: $$f(x) = x * e^{2 pi i \xi x}$$
 
 $$
 f(x) = x * e^{2 pi i \xi x}
@@ -101,13 +113,25 @@ Many blocks can be nested. Try dragging a heading or paragraph into here :eyes: 
 Regular file upload
 {% endfile %}
 
+{% tabs %}
+{% tab title="First Tab" %}
+
+{% endtab %}
+
+{% tab title="Second Tab" %}
+New content within the second tab
+{% endtab %}
+
+{% tab title="Third tab" %}
+
+{% endtab %}
+{% endtabs %}
+
 {% include "https://gitbook-x-dev-viktor.firebaseapp.com/s/RUIXByPBQwrYYvtdUBsm/~/reusable/nkefG4Ws6aGVpEqrcGaA/" %}
 
 ***
 
 #### Code blocks and tables
-
-<table data-full-width="true"><thead><tr><th>new header</th><th data-type="number"></th><th data-type="checkbox"></th><th><select multiple><option value="ckeSylaGDY0E" label="A" color="blue"></option><option value="dhqEsOmLs0WI" label="B" color="blue"></option><option value="37mNjDuTfiQv" label="C" color="blue"></option></select></th><th data-type="users" data-multiple></th><th data-type="content-ref"></th><th data-type="rating" data-max="5"></th><th data-type="files"></th><th data-type="image"></th></tr></thead><tbody><tr><td>new text</td><td>123</td><td>true</td><td><span data-option="37mNjDuTfiQv">C, </span><span data-option="dhqEsOmLs0WI">B</span></td><td><a href="/broken/users/vRgjcsOprrMak4a2cWhgFXdGOEC3">Broken link</a></td><td><a href="/broken/pages/Z4b7PgWgT9x2UC8ts3li">Broken link</a></td><td>4</td><td></td><td></td></tr><tr><td>Cell</td><td>null</td><td>false</td><td><span data-option="dhqEsOmLs0WI">B</span></td><td></td><td></td><td>4</td><td></td><td></td></tr></tbody></table>
 
 <pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript">function CodeHighlightLine(props: {
     block: DocumentBlockCode;
@@ -160,20 +184,6 @@ Regular file upload
 
 
 #### Tabs
-
-{% tabs %}
-{% tab title="First Tab" %}
-
-{% endtab %}
-
-{% tab title="Second Tab" %}
-New content within the second tab
-{% endtab %}
-
-{% tab title="Third tab" %}
-
-{% endtab %}
-{% endtabs %}
 
 
 
@@ -280,7 +290,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 {% endcolumns %}
 
 {% columns fullWidth="true" %}
-{% column width="33.33333333333333%" %}
+{% column width="58.333333333333336%" %}
 ## Ut ipsum, viverra vel hendrerit vitae
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem. \
@@ -288,7 +298,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 <a href="all-blocks.md#test" class="button primary">Learn more</a>
 {% endcolumn %}
 
-{% column width="66.66666666666667%" valign="bottom" %}
+{% column width="41.666666666666664%" valign="bottom" %}
 <h2 align="right">Vertical alignment - bottom</h2>
 
 <p align="right">Donec eu augue in dui convallis  id ac sapien. Phasellus mauris lorem, ullamcorper sit amet, facilisis sit amet sem.</p>
