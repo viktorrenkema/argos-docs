@@ -32,7 +32,7 @@ Gitbook is a block-based editor, meaning you can add many kinds of blocks to you
 * Dos 2
 * Tres 3
 
-
+<code class="expression">space.vars.MY_NAME</code>
 
 $$
 f(x) = x * e^{2 pi i \xi x}
