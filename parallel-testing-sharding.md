@@ -74,8 +74,8 @@ jobs:
   e2e-tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
+    strategy: // [!code --] 
+      fail-fast: false // [!code ++] 
       matrix:
         shardIndex: [1, 2, 3, 4]
     steps:
