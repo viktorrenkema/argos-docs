@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Codeblock](README.md)
+* [All blocks](all-blocks.md)
 * [🎨 Blocks](<README (2).md>)
 * [Introduction](<README (1).md>)
 * [quickstart](quickstart/README.md)
