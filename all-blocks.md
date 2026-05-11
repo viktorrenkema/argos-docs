@@ -8,7 +8,11 @@
 
 **Bold paragraph**
 
-GitBook is a block-based editor, meaning you can add different kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page.
+_Italic paragraph_
+
+~~Strikethrough paragraph~~
+
+Gitbook is a block-based editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page.
 
 
 
@@ -30,6 +34,10 @@ GitBook is a block-based editor, meaning you can add different kinds of blocks t
 
 
 
+$$
+f(x) = x * e^{2 pi i \xi x}
+$$
+
 [Em dashes and shortcuts](https://gitbook-x-dev-viktor.firebaseapp.com/s/RUIXByPBQwrYYvtdUBsm/blocks/em-dashes-and-shortcuts "mention") [www.docs.gitbook.com](https://www.docs.gitbook.com)
 
 <i class="fa-flag" style="color:red;">:flag:</i> <i class="fa-earth-africa" style="color:green;">:earth-africa:</i> <i class="fa-face-smile" style="color:$warning;">:face-smile:</i> <i class="fa-gitbook">:gitbook:</i> &#x20;
@@ -42,7 +50,7 @@ $$(x * x^2)$$
 
 Some text with inline elements inserted into it:
 
-<code class="expression">page.vars.</code> TEST\_1: <code class="expression">page.vars.NAME_OF_MALE_CAT</code>
+<code class="expression">page.vars</code> TEST\_1: <code class="expression">page.vars.NAME_OF_MALE_CAT</code>
 
 TEST\_2: <code class="expression">NAME_OF_FEMALE_CAT</code>
 

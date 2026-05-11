@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Codeblock](README.md)
+* [Diff 2.0](README.md)
+* [Codeblock](<README (3).md>)
 * [All blocks](all-blocks.md)
 * [🎨 Blocks](<README (2).md>)
 * [Introduction](<README (1).md>)
