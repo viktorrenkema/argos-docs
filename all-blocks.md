@@ -2,8 +2,6 @@
 
 
 
-<table data-full-width="true"><thead><tr><th data-type="number"></th><th data-type="checkbox"></th><th><select multiple><option value="ckeSylaGDY0E" label="A" color="blue"></option><option value="dhqEsOmLs0WI" label="B" color="blue"></option><option value="37mNjDuTfiQv" label="C" color="blue"></option></select></th><th data-type="users" data-multiple></th><th data-type="content-ref"></th><th data-type="rating" data-max="5"></th><th data-type="files"></th><th data-type="image"></th></tr></thead><tbody><tr><td>123</td><td>true</td><td><span data-option="37mNjDuTfiQv">C, </span><span data-option="dhqEsOmLs0WI">B</span></td><td><a href="/broken/users/vRgjcsOprrMak4a2cWhgFXdGOEC3">Broken link</a></td><td><a href="/broken/pages/Z4b7PgWgT9x2UC8ts3li">Broken link</a></td><td>4</td><td></td><td></td></tr><tr><td>null</td><td>false</td><td><span data-option="dhqEsOmLs0WI">B</span></td><td></td><td></td><td>4</td><td></td><td></td></tr></tbody></table>
-
 ## Heading 1
 
 ### <sup><sub>~~_<mark style="color:$danger;background-color:cyan;">**Heading 2**</mark>_~~<sub></sup>
@@ -12,7 +10,31 @@
 
 Gitbook is a block-based editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page.
 
-**Bold paragraph**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Bold** [<sup><sub>~~_<mark style="color:$primary;background-color:$success;">**paragraph**</mark>_~~<sub></sup>](#user-content-fn-1)[^1]
 
 _Italic paragraph_
 
@@ -304,3 +326,5 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 <p align="right">Donec eu augue in dui convallis  id ac sapien. Phasellus mauris lorem, ullamcorper sit amet, facilisis sit amet sem.</p>
 {% endcolumn %}
 {% endcolumns %}
+
+[^1]: bla
