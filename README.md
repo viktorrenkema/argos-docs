@@ -3,6 +3,7 @@ icon: file-plus-minus
 cover: >-
   https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw3fHxjaGFuZ2VzfGVufDB8fHx8MTc3ODQ5NTM1M3ww&ixlib=rb-4.1.0&q=85
 coverY: 0
+coverHeight: 424
 layout:
   width: wide
   cover:
@@ -26,9 +27,9 @@ layout:
 
 # Diff 2.0
 
-## Diff mutations — coverage tracker
+## Diff mutations coverage tracker
 
-A running inventory of every document mutation the diffing backend (`packages/doc-core/src/diff/`) can detect, and how it surfaces in the new diff tooltip (`packages/react-app/src/Components/ContentEditor/diff/BlockDiffLayer.tsx`).
+A running inventory of every document mutation the diffing backend `packages/doc-core/src/diff/` can detect, and how it surfaces in the new diff tooltip `packages/react-app/src/Components/ContentEditor/diff/BlockDiffLayer.tsx`
 
 ### How to read the tables
 
@@ -47,15 +48,15 @@ The tooltip is built from three pieces on `BlockDiffData`: `blockSemanticName` (
 
 ### Block-level: add / delete / move
 
-| Mutation                                      | Diff type                   | Tooltip               | Source                |
-| --------------------------------------------- | --------------------------- | --------------------- | --------------------- |
-| Block added (any type)                        | Added                       | header                | diffBlocks.ts:759-768 |
-| Block deleted (any type)                      | Deleted                     | header                | diffBlocks.ts:759-768 |
-| Block type changed (e.g. paragraph → heading) | Deleted + Added             | header (each side)    | diffBlocks.ts:339-349 |
-| Block moved up (old position)                 | Deleted (isMoved, dir=up)   | header ("Moved up")   | diffBlocks.ts:311-322 |
-| Block moved down (old position)               | Deleted (isMoved, dir=down) | header ("Moved down") | diffBlocks.ts:311-322 |
-| Block moved up (new position)                 | Added (isMoved, dir=up)     | header ("Moved up")   | diffBlocks.ts:339-352 |
-| Block moved down (new position)               | Added (isMoved, dir=down)   | header ("Moved down") | diffBlocks.ts:339-352 |
+| Mutation                                                                                   | Diff type                   | Tooltip               | Source                |
+| ------------------------------------------------------------------------------------------ | --------------------------- | --------------------- | --------------------- |
+| <mark style="background-color:green;">Block added (any type)</mark>                        | Added                       | header                | diffBlocks.ts:759-768 |
+| <mark style="background-color:green;">Block deleted (any type)</mark>                      | Deleted                     | header                | diffBlocks.ts:759-768 |
+| <mark style="background-color:green;">Block type changed (e.g. paragraph → heading)</mark> | Deleted + Added             | header (each side)    | diffBlocks.ts:339-349 |
+| Block moved up (old position)                                                              | Deleted (isMoved, dir=up)   | header ("Moved up")   | diffBlocks.ts:311-322 |
+| Block moved down (old position)                                                            | Deleted (isMoved, dir=down) | header ("Moved down") | diffBlocks.ts:311-322 |
+| Block moved up (new position)                                                              | Added (isMoved, dir=up)     | header ("Moved up")   | diffBlocks.ts:339-352 |
+| Block moved down (new position)                                                            | Added (isMoved, dir=down)   | header ("Moved down") | diffBlocks.ts:339-352 |
 
 ***
 
