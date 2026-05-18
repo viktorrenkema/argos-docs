@@ -27,9 +27,11 @@ layout:
 
 # Diff 2.0
 
-## Diff mutations coverage tracker
+{% include ".gitbook/includes/the-tooltip-is-built-from-t....md" %}
 
 A running inventory of every document mutation the diffing backend `packages/doc-core/src/diff/` can detect, and how it surfaces in the new diff tooltip `packages/react-app/src/Components/ContentEditor/diff/BlockDiffLayer.tsx`
+
+Some new text
 
 ### How to read the tables
 
@@ -42,7 +44,7 @@ A running inventory of every document mutation the diffing backend `packages/doc
   * `—` — backend detects something but the tooltip currently shows nothing distinguishing.
 * **Source** — file:line in the backend that produces the annotation.
 
-The tooltip is built from three pieces on `BlockDiffData`: `blockSemanticName` (header), `changeDescription` (text body), `changeItems` (rich body). `changeItems` takes priority over `changeDescription` when both exist.
+{% include ".gitbook/includes/the-tooltip-is-built-from-t....md" %}
 
 ***
 

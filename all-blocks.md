@@ -1,6 +1,6 @@
 # All blocks
 
-
+{% include ".gitbook/includes/untitled.md" %}
 
 ## Heading 1
 
@@ -8,7 +8,7 @@
 
 #### Heading 3
 
-Gitbook is a block-based editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page.
+Gitbook is a block-based editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page. small copy
 
 
 

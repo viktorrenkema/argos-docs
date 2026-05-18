@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Diff 2.0](README.md)
+* [Debugging 10960](debugging-10960.md)
 * [Codeblock](<README (3).md>)
 * [All blocks](all-blocks.md)
 * [🎨 Blocks](<README (2).md>)
