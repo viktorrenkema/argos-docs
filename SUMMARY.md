@@ -13,7 +13,7 @@
   * [Puppeteer Quickstart](quickstart/puppeteer-quickstart.md)
   * [Storybook Quickstart](quickstart/storybook-quickstart.md)
 * [Monorepos setup](monorepos-setup.md)
-* [Argos Command Line Interface (CLI)](argos-command-line-interface-cli.md)
+* [🤝 Argos Command Line Interface](argos-command-line-interface-cli.md)
 * [Run on preview deployments](run-on-preview-deployments.md)
 * [SAML Single Sign-On](saml-single-sign-on.md)
 * [Parallel testing (sharding)](parallel-testing-sharding.md)
