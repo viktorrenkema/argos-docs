@@ -33,4 +33,4 @@ Dig deeper into Argos topics:
 
 * [Baselines & monitoring](baseline-build.md)
 * [Integrations](integrations.md)
-* [Flaky test detection](flaky-test-detection.md)
+* [Flaky Tests](flaky-tests.md)

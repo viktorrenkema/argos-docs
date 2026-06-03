@@ -21,7 +21,6 @@
 * [Storybook Test Runner Quickstart](storybook-test-runner-quickstart.md)
 * [Adding Screenshot metadata](adding-screenshot-metadata.md)
 * [Flaky Tests](flaky-tests.md)
-* [Flaky Test Detection](flaky-test-detection.md)
 * [Slack Integration](slack-integration.md)
 * [Bitbucket Integration](bitbucket-integration.md)
 * [Pricing plans](pricing-plans.md)
