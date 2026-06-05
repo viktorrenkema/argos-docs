@@ -1,4 +1,8 @@
-# 🎨 Blocks
+---
+icon: file-lines
+---
+
+# Inlines
 
 ### 🎨 **Default colors**
 

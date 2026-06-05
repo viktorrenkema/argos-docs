@@ -1,11 +1,13 @@
 # Table of contents
 
+## Non-docs
+
 * [Diff 2.0](README.md)
-* [Trigger merge conflict](trigger-merge-conflict.md)
-* [Debugging 10960](debugging-10960.md)
-* [Codeblock](<README (3).md>)
-* [All blocks](all-blocks.md)
-* [🎨 Blocks](<README (2).md>)
+* [All blocks](non-docs/all-blocks/README.md)
+  * [Inlines](non-docs/all-blocks/readme.md)
+
+***
+
 * [Introduction](<README (1).md>)
 * [quickstart](quickstart/README.md)
   * [Cypress Quickstart](quickstart/cypress-quickstart.md)

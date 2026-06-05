@@ -1,10 +1,10 @@
 # All blocks
 
-{% include ".gitbook/includes/untitled.md" %}
+{% include "../../.gitbook/includes/untitled.md" %}
 
 ## Heading 1
 
-### <sup><sub>~~_<mark style="color:$danger;background-color:cyan;">**Heading 2**</mark>_~~<sub></sup>
+### Heading 2
 
 #### Heading 3
 
@@ -131,7 +131,7 @@ Many blocks can be nested. Try dragging a heading or paragraph into here :eyes: 
 
 <div><figure><img src="https://images.unsplash.com/photo-1775135999784-fcb8a7dee0d4?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyMzQ1MDV8&#x26;ixlib=rb-4.1.0&#x26;q=85" alt="" width="188"><figcaption></figcaption></figure> <figure><img src="https://images.unsplash.com/photo-1542202229-7d93c33f5d07?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw3fHxmb3Jlc3R8ZW58MHx8fHwxNzY4ODMwNDQyfDA&#x26;ixlib=rb-4.1.0&#x26;q=85" alt="" width="188"><figcaption><p>New caption</p></figcaption></figure></div>
 
-{% file src=".gitbook/assets/old css" %}
+{% file src="../../.gitbook/assets/old css" %}
 Regular file upload
 {% endfile %}
 
@@ -253,7 +253,7 @@ Some content within this stepper
 {% column width="25%" %}
 Test different widths
 
-<figure><img src=".gitbook/assets/photo-1611773780085-ebd3b4662f51.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/photo-1611773780085-ebd3b4662f51.jpeg" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column width="75%" %}
@@ -269,7 +269,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 {% column width="50%" %}
 Test different widths
 
-<figure><img src=".gitbook/assets/photo-1611773780085-ebd3b4662f51.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/photo-1611773780085-ebd3b4662f51.jpeg" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column width="50%" %}
@@ -285,7 +285,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem. \
 \
-<a href="all-blocks.md#test" class="button primary">Learn more</a>
+<a href="./#test" class="button primary">Learn more</a>
 {% endcolumn %}
 
 {% column width="66.66666666666667%" %}
@@ -301,7 +301,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem. \
 \
-<a href="all-blocks.md#test" class="button primary">Learn more</a>
+<a href="./#test" class="button primary">Learn more</a>
 {% endcolumn %}
 
 {% column width="66.66666666666667%" %}
@@ -317,7 +317,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem. \
 \
-<a href="all-blocks.md#test" class="button primary">Learn more</a>
+<a href="./#test" class="button primary">Learn more</a>
 {% endcolumn %}
 
 {% column width="41.666666666666664%" valign="bottom" %}
