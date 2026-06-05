@@ -2,9 +2,13 @@
 
 ## Non-docs
 
-* [Diff 2.0](README.md)
-* [All blocks](non-docs/all-blocks/README.md)
-  * [Inlines](non-docs/all-blocks/readme.md)
+* [All blocks](README.md)
+  * [Inlines](<README (2).md>)
+* [All mutations](non-docs/all-mutations.md)
+
+## Diffing
+
+* [Diff 2.0](diffing/diff-2.0.md)
 
 ***
 

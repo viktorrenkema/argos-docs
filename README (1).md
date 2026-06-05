@@ -5,7 +5,7 @@ tags:
 
 # Introduction
 
-Argos detects unintended visual changes in your UI, helping teams maintain high product quality as they ship faster.
+Argos [detects](run-on-preview-deployments.md) unintended visual changes in your UI, helping teams maintain high product quality as they **ship faster**.
 
 ### Quick start
 
