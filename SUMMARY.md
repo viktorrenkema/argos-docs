@@ -4,6 +4,7 @@
 
 * [All blocks](README.md)
   * [Inlines](<README (2).md>)
+* [Columns](non-docs/columns.md)
 * [All mutations](non-docs/all-mutations.md)
 
 ## Diffing
