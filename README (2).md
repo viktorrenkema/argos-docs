@@ -1,8 +1,4 @@
----
-icon: file-lines
----
-
-# Inlines
+# ⛺ Inlines
 
 ### 🎨 **Default colors**
 
@@ -30,3 +26,4 @@ Trivial change #6
 * <mark style="color:$success;">success</mark> / <mark style="background-color:$success;">success</mark>
 * <mark style="color:$warning;">warning</mark> / <mark style="background-color:$warning;">warning</mark>
 * <mark style="color:$danger;">danger</mark> / <mark style="background-color:$danger;">danger</mark>
+

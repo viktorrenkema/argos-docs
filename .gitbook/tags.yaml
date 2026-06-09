@@ -12,3 +12,7 @@
   color: green
 - tag: grey
   label: Grey
+- tag: love-diffs
+  label: Love diffs
+  emoji: 💌
+  color: red

@@ -2,23 +2,24 @@
 
 ## Non-docs
 
-* [All blocks](README.md)
-  * [Inlines](<README (2).md>)
+* [🍭 Getting started](README.md)
+* [🤖 Most mutations](non-docs/most-mutations.md)
+* [🔮 All blocks](all-blocks.md)
+  * [🖼️ Images in every combination](non-docs/all-blocks/images-in-every-combination.md)
+  * [⛺ Inlines](<README (2).md>)
 * [Columns](non-docs/columns.md)
-* [All mutations](non-docs/all-mutations.md)
 
 ## Diffing
 
-* [Diff 2.0](diffing/diff-2.0.md)
+* [Diff 2.0](<README (1).md>)
 
 ***
 
-* [Introduction](<README (1).md>)
+* [Introduction](<README (1) (1).md>)
 * [quickstart](quickstart/README.md)
   * [Cypress Quickstart](quickstart/cypress-quickstart.md)
   * [React Router Quickstart](quickstart/react-router-quickstart.md)
   * [Puppeteer Quickstart](quickstart/puppeteer-quickstart.md)
-  * [Storybook Quickstart](quickstart/storybook-quickstart.md)
 * [Monorepos setup](monorepos-setup.md)
 * [🤝 Argos Command Line Interface](argos-command-line-interface-cli.md)
 * [Run on preview deployments](run-on-preview-deployments.md)

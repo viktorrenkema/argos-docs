@@ -10,7 +10,7 @@ To get the most out of this guide, you'll need to:
 * [Create your project in Argos](https://app.argos-ci.com/new)
 
 {% hint style="info" %}
-If you use Vitest and not Test Runner, follow our [Storybook Vitest quickstart](quickstart/storybook-quickstart.md).
+If you use Vitest and not Test Runner, follow our [Storybook Vitest quickstart](/broken/pages/be49ca9d9d843f6325697d615dd94be1cd636b94).
 
 If you use a legacy version of Storybook (\<v8), follow our [legacy Storybook quickstart](storybook-legacy-less-than-v8-quickstart.md).
 {% endhint %}

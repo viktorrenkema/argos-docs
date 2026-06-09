@@ -12,7 +12,7 @@ To get the most out of this guide, you'll need to:
 * [Create your project in Argos](https://app.argos-ci.com/new)
 
 {% hint style="info" %}
-If you use a recent version of Storybook (>v8), follow our [modern Storybook guide](quickstart/storybook-quickstart.md).
+If you use a recent version of Storybook (>v8), follow our [modern Storybook guide](/broken/pages/be49ca9d9d843f6325697d615dd94be1cd636b94).
 {% endhint %}
 
 {% stepper %}
