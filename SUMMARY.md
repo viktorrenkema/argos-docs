@@ -7,6 +7,7 @@
 * [🔮 All blocks](all-blocks.md)
   * [🖼️ Images in every combination](non-docs/all-blocks/images-in-every-combination.md)
   * [⛺ Inlines](<README (2).md>)
+  * [Tables](non-docs/all-blocks/tables.md)
 * [Columns](non-docs/columns.md)
 
 ## Diffing
