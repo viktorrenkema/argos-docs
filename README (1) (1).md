@@ -1,4 +1,6 @@
 ---
+icon: chess-pawn-piece
+coverY: 0
 tags:
   - '101'
 ---

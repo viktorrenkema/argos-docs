@@ -1,8 +1,12 @@
-# Storybook Legacy (\\\<v8) Quickstart
+# 🤖 Storybook Legacy (\\\<v8) Quickstart
 
-Learn how to setup visual testing in a Storybook (\<v8) using Argos.
+Learn how to set up visual testing in Storybook (\<v8) with Argos.
 
-To integrate Argos with a legacy version of Storybook (\<v8), you have to use [Storycap](https://github.com/reg-viz/storycap) to crawl your Storybook and capture screenshots of your components.
+This guide keeps your existing Storybook workflow.
+
+[Storycap](https://github.com/reg-viz/storycap) crawls your stories, captures screenshots, and prepares them for upload to Argos.
+
+To integrate Argos with a legacy version of Storybook (\<v8), use Storycap as the capture layer. If you use Storybook v8 or later, switch to the [Storybook Test Runner Quickstart](storybook-test-runner-quickstart.md).
 
 ### Prerequisites
 
@@ -14,6 +18,18 @@ To get the most out of this guide, you'll need to:
 {% hint style="info" %}
 If you use a recent version of Storybook (>v8), follow our [modern Storybook guide](/broken/pages/be49ca9d9d843f6325697d615dd94be1cd636b94).
 {% endhint %}
+
+<details>
+
+<summary>When to use this guide</summary>
+
+Use this setup when your team still runs Storybook 6 or 7.
+
+It works well in CI. You can capture from a deployed URL or a local static build.
+
+If you need to capture non-Storybook pages, see [Capture Screenshots from URLs](capture-screenshots-from-urls.md).
+
+</details>
 
 {% stepper %}
 {% step %}
@@ -53,11 +69,19 @@ bun add --dev @argos-ci/cli storycap
 {% endtab %}
 {% endtabs %}
 
-Read the [CLI documentation](argos-command-line-interface-cli.md) if you need information about advanced usages.
+{% hint style="success" %}
+Install both packages together. `storycap` captures screenshots. `@argos-ci/cli` uploads them.
+{% endhint %}
+
+Read the [Argos Command Line Interface](argos-command-line-interface-cli.md) guide if you need advanced upload options.
 {% endstep %}
 
 {% step %}
 #### Capture screenshots
+
+Choose the path that matches your pipeline.
+
+A deployed Storybook is the simplest option. A local static build gives you full control and removes external network dependencies.
 
 There are two ways to capture screenshots of your Storybook:
 
@@ -69,6 +93,10 @@ There are two ways to capture screenshots of your Storybook:
 npm exec -- storycap <STORYBOOK-URL> --outDir ./screenshots
 ```
 {% endcode %}
+
+{% hint style="info" %}
+Use a deployed URL when CI can reach it without extra authentication. This keeps the job shorter.
+{% endhint %}
 
 * If your Storybook is not deployed, you need to serve your Storybook before capturing the screenshots. Use the following commands:
 
@@ -82,15 +110,31 @@ npm exec -- storycap --serverCmd "npx http-server ./storybook-static --port 6006
 ```
 {% endcode %}
 
+{% hint style="warning" %}
+Serve the exact static output you want to review. Different env flags or assets can create noisy diffs.
+{% endhint %}
+
 Read the [Storycap documentation](https://github.com/reg-viz/storycap) to learn more about the installation and advanced usages.
 
-Add `./screenshots` to your `.gitignore` file, to avoid uploading screenshots to your Git repository.
+Add `./screenshots` to your `.gitignore` file to avoid committing generated artifacts.
+
+<details>
+
+<summary>Troubleshooting unstable screenshots</summary>
+
+If your screenshots look inconsistent between runs, stabilize page state before capture.
+
+Start with [Wait for Loading](wait-for-loading.md), [Stabilize Date & Time](stabilize-date-and-time.md), and [Browser Glitches](browser-glitches.md).
+
+</details>
 {% endstep %}
 
 {% step %}
 #### Upload screenshots on CI
 
-Add this command to your CI pipeline to upload the screenshots to Argos.
+Run this command after screenshot capture completes.
+
+Argos uploads every file in `./screenshots` and associates the build with your branch or pull request.
 
 {% code title="Upload screenshots to Argos" %}
 ```
@@ -102,8 +146,12 @@ npm exec -- argos upload --token <ARGOS_TOKEN> ./screenshots
 The value of ARGOS\_TOKEN is available in your project settings on Argos.
 {% endhint %}
 
-{% hint style="info" %}
-You need a reference build to compare your changes with. If you don't have one, builds will remain orphan until you run Argos on your reference branch.
+{% hint style="warning" %}
+You need a [Baseline build](baseline-build.md) to compare new screenshots. Without one, builds remain orphan until you run Argos on your reference branch.
+{% endhint %}
+
+{% hint style="success" %}
+If your team validates preview environments, pair this setup with [Run on preview deployments](run-on-preview-deployments.md).
 {% endhint %}
 {% endstep %}
 {% endstepper %}
@@ -112,11 +160,18 @@ You need a reference build to compare your changes with. If you don't have one, 
 
 After committing and pushing your changes, the Argos check status will appear on your pull request in GitHub (or GitLab).
 
-You can now review changes of your app for each pull request, avoid visual bugs and merge with confidence. Welcome on board!
+Your team can now review UI changes before merge, catch regressions early, and keep screenshots tied to each branch.
+
+As your suite grows, you can also scale capture strategies with [Parallel testing (sharding)](parallel-testing-sharding.md) and enrich runs with [Adding Screenshot metadata](adding-screenshot-metadata.md).
+
+Welcome on board!
 
 ### Additional resources
 
 * [Argos + Storybook legacy example](https://github.com/argos-ci/argos-javascript/tree/main/examples/storybook-legacy)
+* [Storybook Test Runner Quickstart](storybook-test-runner-quickstart.md)
+* [How Argos detects visual differences](how-argos-detects-visual-differences.md)
+* [Flaky Tests](flaky-tests.md)
 * [Storycap documentation](https://github.com/reg-viz/storycap)
 * [Storybook documentation](https://storybook.js.org/docs)
 

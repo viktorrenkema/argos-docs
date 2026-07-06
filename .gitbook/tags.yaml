@@ -2,6 +2,10 @@
   label: '101'
   icon: baby
   color: blue
+- tag: new-tag
+  label: New tag
+  icon: lychee
+  color: orange
 - tag: beta
   label: Beta
   icon: rectangle-beta

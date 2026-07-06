@@ -71,5 +71,5 @@
 * [WebdriverIO](webdriverio.md)
 * [Usage monitoring](usage-monitoring.md)
 * [Spend Management](spend-management.md)
-* [Storybook Legacy (\\\<v8) Quickstart](storybook-legacy-less-than-v8-quickstart.md)
-* [Responsive viewports](responsive-viewports.md)
+* [🤖 Storybook Legacy (\\\<v8) Quickstart](storybook-legacy-less-than-v8-quickstart.md)
+* [🍥 Responsive viewports](responsive-viewports.md)

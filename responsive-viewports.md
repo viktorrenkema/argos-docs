@@ -1,4 +1,4 @@
-# Responsive viewports
+# 🍥 Responsive viewports
 
 Argos lets you capture the same page at multiple breakpoints with a single test. Configure viewports once and get consistent responsive coverage across Playwright, Cypress and Puppeteer.
 
@@ -18,70 +18,89 @@ Pass a viewports array to `argosScreenshot()` to generate screenshots for each d
 await argosScreenshot(..., {
   viewports: [
     "iphone-4",
+    "pixel-ultra",
     { width: 800, height: 600 },
     { preset: "ipad-2", orientation: "landscape" },
+    { preset: "galaxy-fold-open" },
+    { preset: "cinema-wall", orientation: "landscape" },
   ],
 });
 ```
 
 ### Available Presets
 
-| Preset            | Width (px) | Height (px) |
-| ----------------- | ---------: | ----------: |
-| pro-display       |       3008 |        1962 |
-| studio-display    |       2560 |        1440 |
-| imac-24           |       2240 |        1260 |
-| macbook-16        |       1536 |         960 |
-| macbook-15        |       1440 |         900 |
-| macbook-13        |       1280 |         800 |
-| macbook-11        |       1366 |         768 |
-| ipad-12-pro       |       1024 |        1366 |
-| ipad-11-pro       |        834 |        1194 |
-| ipad-10           |        810 |        1080 |
-| ipad-10-pro       |        834 |        1112 |
-| ipad-9-pro        |        768 |        1024 |
-| ipad-2            |        768 |        1024 |
-| ipad-mini         |        768 |        1024 |
-| iphone-air        |        420 |         912 |
-| iphone-17         |        402 |         874 |
-| iphone-17-pro     |        402 |         873 |
-| iphone-17-pro-max |        440 |         956 |
-| iphone-16         |        393 |         852 |
-| iphone-16e        |        390 |         844 |
-| iphone-16-plus    |        430 |         932 |
-| iphone-16-pro     |        402 |         874 |
-| iphone-16-pro-max |        440 |         956 |
-| iphone-15         |        393 |         852 |
-| iphone-15-plus    |        430 |         932 |
-| iphone-15-pro     |        393 |         852 |
-| iphone-15-pro-max |        430 |         932 |
-| iphone-14         |        390 |         844 |
-| iphone-14-plus    |        428 |         926 |
-| iphone-14-pro     |        393 |         852 |
-| iphone-14-pro-max |        490 |         932 |
-| iphone-13         |        390 |         844 |
-| iphone-13-mini    |        360 |         780 |
-| iphone-13-pro     |        390 |         844 |
-| iphone-13-pro-max |        428 |         926 |
-| iphone-12         |        390 |         844 |
-| iphone-12-mini    |        360 |         780 |
-| iphone-12-pro     |        390 |         844 |
-| iphone-12-pro-max |        428 |         926 |
-| iphone-11         |        414 |         896 |
-| iphone-11-pro     |        375 |         812 |
-| iphone-11-pro-max |        414 |         896 |
-| iphone-xr         |        414 |         896 |
-| iphone-x          |        375 |         812 |
-| iphone-6+         |        414 |         736 |
-| iphone-se2        |        375 |         667 |
-| iphone-8          |        375 |         667 |
-| iphone-7          |        375 |         667 |
-| iphone-6          |        375 |         667 |
-| iphone-5          |        320 |         568 |
-| iphone-4          |        320 |         480 |
-| iphone-3          |        320 |         480 |
-| samsung-s10       |        360 |         760 |
-| samsung-note9     |        414 |         846 |
+| Preset             | Width (px) | Height (px) |
+| ------------------ | ---------: | ----------: |
+| pro-display        |       3008 |        1962 |
+| studio-display     |       2560 |        1440 |
+| imac-24            |       2240 |        1260 |
+| macbook-16         |       1536 |         960 |
+| macbook-15         |       1440 |         900 |
+| macbook-13         |       1280 |         800 |
+| macbook-11         |       1366 |         768 |
+| ipad-12-pro        |       1024 |        1366 |
+| ipad-11-pro        |        834 |        1194 |
+| ipad-10            |        810 |        1080 |
+| ipad-10-pro        |        834 |        1112 |
+| ipad-9-pro         |        768 |        1024 |
+| ipad-2             |        768 |        1024 |
+| ipad-mini          |        768 |        1024 |
+| ipad-air-max       |        920 |        1280 |
+| ipad-nano          |        640 |         960 |
+| iphone-air         |        420 |         912 |
+| iphone-17          |        402 |         874 |
+| iphone-17-pro      |        402 |         873 |
+| iphone-17-pro-max  |        440 |         956 |
+| iphone-16          |        393 |         852 |
+| iphone-16e         |        390 |         844 |
+| iphone-16-plus     |        430 |         932 |
+| iphone-16-pro      |        402 |         874 |
+| iphone-16-pro-max  |        440 |         956 |
+| iphone-15          |        393 |         852 |
+| iphone-15-plus     |        430 |         932 |
+| iphone-15-pro      |        393 |         852 |
+| iphone-15-pro-max  |        430 |         932 |
+| iphone-14          |        390 |         844 |
+| iphone-14-plus     |        428 |         926 |
+| iphone-14-pro      |        393 |         852 |
+| iphone-14-pro-max  |        490 |         932 |
+| iphone-13          |        390 |         844 |
+| iphone-13-mini     |        360 |         780 |
+| iphone-13-pro      |        390 |         844 |
+| iphone-13-pro-max  |        428 |         926 |
+| iphone-12          |        390 |         844 |
+| iphone-12-mini     |        360 |         780 |
+| iphone-12-pro      |        390 |         844 |
+| iphone-12-pro-max  |        428 |         926 |
+| iphone-11          |        414 |         896 |
+| iphone-11-pro      |        375 |         812 |
+| iphone-11-pro-max  |        414 |         896 |
+| iphone-xr          |        414 |         896 |
+| iphone-x           |        375 |         812 |
+| iphone-6+          |        414 |         736 |
+| iphone-se2         |        375 |         667 |
+| iphone-8           |        375 |         667 |
+| iphone-7           |        375 |         667 |
+| iphone-6           |        375 |         667 |
+| iphone-5           |        320 |         568 |
+| iphone-4           |        320 |         480 |
+| iphone-3           |        320 |         480 |
+| iphone-zero        |        300 |         640 |
+| iphone-ultra-max   |        520 |        1080 |
+| pixel-ultra        |        412 |         915 |
+| pixel-ultra-xl     |        480 |        1040 |
+| pixel-fold         |        768 |         947 |
+| galaxy-aero        |        384 |         854 |
+| galaxy-fold-open   |        673 |         841 |
+| galaxy-fold-closed |        345 |         821 |
+| samsung-s10        |        360 |         760 |
+| samsung-note9      |        414 |         846 |
+| surface-duo        |        540 |         720 |
+| surface-studio     |       2400 |        1600 |
+| desktop-wide       |       1920 |        1080 |
+| desktop-ultrawide  |       3440 |        1440 |
+| desktop-square     |       1200 |        1200 |
+| cinema-wall        |       5120 |        1440 |
 
 ### Troubleshooting and Best Practices
 

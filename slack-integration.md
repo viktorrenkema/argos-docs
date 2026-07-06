@@ -1,6 +1,6 @@
 # Slack Integration
 
-Argos integrates with Slack to keep your team aligned on visual changes and reviews.
+Argos integrates wit helloh Slack to keep your team aligned on visual changes and reviews.
 
 It sends notifications and also unfurls Argos build URLs directly inside Slack.
 
@@ -10,7 +10,6 @@ Slack integration is available on Pro and Enterprise plans
 
 ### What you get
 
-* Automatic Slack notifications when builds are created, reviewed, approved, or rejected
 * Rich previews when pasting an Argos build URL in Slack
 * Fine grained control using Automations conditions
 
@@ -129,7 +128,7 @@ _Finding the ID of a Slack Channel_
 {% endstep %}
 
 {% step %}
-#### Send a test notification
+#### Send a testing notification
 
 Click **Send test notification** to verify the connection. A test message will be sent to the selected channel.
 {% endstep %}
@@ -137,7 +136,7 @@ Click **Send test notification** to verify the connection. A test message will b
 {% step %}
 #### Create the rule
 
-Click **Create Rule** to activate it.
+Click **Create Rule** to activate it. bla
 {% endstep %}
 {% endstepper %}
 

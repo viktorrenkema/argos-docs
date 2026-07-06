@@ -2,6 +2,8 @@
 
 Argos offers flexible plans for individuals, teams, and enterprises. From the free Hobby Plan to fully customizable Enterprise options.
 
+A new paragraph here
+
 ### Hobby Plan
 
 Best for individuals and small projects.
