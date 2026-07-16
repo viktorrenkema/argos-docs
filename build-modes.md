@@ -27,7 +27,7 @@ Note: Your CI pipeline must also run on the default branch (main, production, et
 {% step %}
 #### Visual tests in CI
 
-* During these tests, your test framework (Playwright, Cypress, etc.) captures screenshots of the app. Argos offers [SDKs](<README (1) (1).md>) for easy integration with popular frameworks.
+* During these tests, your test framework (Playwright, Cypress, etc.) captures screenshots of the app. Argos offers [SDKs](<README (1) (1) (1).md>) for easy integration with popular frameworks.
 * At the end of the tests, screenshots are uploaded to Argos automatically with the SDK, or manually using the Argos CLI.
 {% endstep %}
 
@@ -90,7 +90,7 @@ CI mode is designed to be the primary workflow for preventing regressions during
 
 CI mode is enabled by default.
 
-Follow the [Get Started guide](<README (1) (1).md>) to integrate Argos into your CI pipeline.
+Follow the [Get Started guide](<README (1) (1) (1).md>) to integrate Argos into your CI pipeline.
 
 ***
 

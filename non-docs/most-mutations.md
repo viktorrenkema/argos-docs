@@ -59,7 +59,7 @@ This tab now explains the purpose of the page.
 {% endtab %}
 
 {% tab title="Reference" %}
-This tab links to the [Introduction](<../README (1) (1).md>) page.
+This tab links to the [Introduction](<../README (1) (1) (1).md>) page.
 {% endtab %}
 
 {% tab title="Notes" %}
@@ -125,7 +125,7 @@ $$
 \sum_{i=1}^{3} i = 6
 $$
 
-[Introduction guide](<../README (1) (1).md>)
+[Introduction guide](<../README (1) (1) (1).md>)
 
 {% include "../.gitbook/includes/the-tooltip-is-built-from-t....md" %}
 

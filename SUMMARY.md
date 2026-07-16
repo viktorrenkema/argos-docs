@@ -2,7 +2,8 @@
 
 ## Non-docs
 
-* [🍭 Getting started](README.md)
+* [Large document](README.md)
+* [🍭 Getting started](<README (1).md>)
 * [🤖 Most mutations](non-docs/most-mutations.md)
 * [🔮 All blocks](all-blocks.md)
   * [🖼️ Images in every combination](non-docs/all-blocks/images-in-every-combination.md)
@@ -12,11 +13,11 @@
 
 ## Diffing
 
-* [Diff 2.0](<README (1).md>)
+* [Diff 2.0](<README (1) (1).md>)
 
 ***
 
-* [Introduction](<README (1) (1).md>)
+* [Introduction](<README (1) (1) (1).md>)
 * [quickstart](quickstart/README.md)
   * [Cypress Quickstart](quickstart/cypress-quickstart.md)
   * [React Router Quickstart](quickstart/react-router-quickstart.md)
