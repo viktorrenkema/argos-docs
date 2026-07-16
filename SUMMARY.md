@@ -2,7 +2,8 @@
 
 ## Non-docs
 
-* [Large document](README.md)
+* [Large changelog](README.md)
+* [Large document](non-docs/large-document.md)
 * [🍭 Getting started](<README (1).md>)
 * [🤖 Most mutations](non-docs/most-mutations.md)
 * [🔮 All blocks](all-blocks.md)
