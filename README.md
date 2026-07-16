@@ -1,3 +1,7 @@
+---
+icon: burst-new
+---
+
 # Large changelog
 
 {% updates format="full" %}
@@ -323,7 +327,7 @@ As always, space-level overrides for individual users and teams remain the most 
 
 You’ll notice some major improvements to search on your docs site starting today. Here’s a quick overview of what’s new:
 
-* **Instant results** – Results are served immediately from a local index, then updated with remote results as they come in, meaning everything feels faster.
+* **Instant** results – Results are served immediately from a local index, then updated with remote results as they come in, meaning everything feels faster.
 * **More relevant results** – We’ve updated the matching algorithm so your site visitors get more accurate results at the top of the results panel.
 * **Compact design** – The new search shows one result per page match. The most relevant section match is shown below the page title, instead of showing multiple sections per result.
 * **Fixed ‘Ask’ bar** – We’ve moved the ‘Ask AI’ option to a consistent position at the bottom of the results list, rather than being mixed in with the search results.

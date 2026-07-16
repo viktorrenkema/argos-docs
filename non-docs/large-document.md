@@ -277,7 +277,7 @@ jobs:
 
 Catch visual regressions before merging by running automated tests on every preview deployment.
 
-Argos integrates with GitHub Actions and connects seamlessly with providers like **Vercel, Netlify, and Cloudflare**.
+Argos integrates with GitHub Actions and connects seamlessly with providers like **Vercel, Netlify, and** Cloudflare.
 
 With this setup:
 
@@ -642,3 +642,673 @@ For more details, see:
   * Project Reviewer: https://argos-ci.com/docs/team-members-and-roles#project-reviewer
   * Project Viewer: https://argos-ci.com/docs/team-members-and-roles#project-viewer
 * Default Project Roles: https://argos-ci.com/docs/team-members-and-roles#default-project-roles
+
+
+
+***
+
+Argos lets you capture the same page at multiple breakpoints with a single test. Configure viewports once and get consistent responsive coverage across Playwright, Cypress and Puppeteer.
+
+### Prerequisites
+
+This feature works seamlessly with [Playwright](../playwright.md), [Cypress](../cypress.md) and [Puppeteer](../puppeteer.md).
+
+{% hint style="info" %}
+If you use Storybook, see the dedicated guide on [Storybook modes](../storybook-story-modes-for-testing-themes-viewports-and-locales.md).
+{% endhint %}
+
+### Viewport Configuration
+
+Pass a viewports array to `argosScreenshot()` to generate screenshots for each dimension or preset you define. You can mix explicit sizes and device presets.
+
+```js
+await argosScreenshot(..., {
+  viewports: [
+    "iphone-4",
+    "pixel-ultra",
+    { width: 800, height: 600 },
+    { preset: "ipad-2", orientation: "landscape" },
+    { preset: "galaxy-fold-open" },
+    { preset: "cinema-wall", orientation: "landscape" },
+  ],
+});
+```
+
+### Available Presets
+
+| Preset             | Width (px) | Height (px) |
+| ------------------ | ---------: | ----------: |
+| pro-display        |       3008 |        1962 |
+| studio-display     |       2560 |        1440 |
+| imac-24            |       2240 |        1260 |
+| macbook-16         |       1536 |         960 |
+| macbook-15         |       1440 |         900 |
+| macbook-13         |       1280 |         800 |
+| macbook-11         |       1366 |         768 |
+| ipad-12-pro        |       1024 |        1366 |
+| ipad-11-pro        |        834 |        1194 |
+| ipad-10            |        810 |        1080 |
+| ipad-10-pro        |        834 |        1112 |
+| ipad-9-pro         |        768 |        1024 |
+| ipad-2             |        768 |        1024 |
+| ipad-mini          |        768 |        1024 |
+| ipad-air-max       |        920 |        1280 |
+| ipad-nano          |        640 |         960 |
+| iphone-air         |        420 |         912 |
+| iphone-17          |        402 |         874 |
+| iphone-17-pro      |        402 |         873 |
+| iphone-17-pro-max  |        440 |         956 |
+| iphone-16          |        393 |         852 |
+| iphone-16e         |        390 |         844 |
+| iphone-16-plus     |        430 |         932 |
+| iphone-16-pro      |        402 |         874 |
+| iphone-16-pro-max  |        440 |         956 |
+| iphone-15          |        393 |         852 |
+| iphone-15-plus     |        430 |         932 |
+| iphone-15-pro      |        393 |         852 |
+| iphone-15-pro-max  |        430 |         932 |
+| iphone-14          |        390 |         844 |
+| iphone-14-plus     |        428 |         926 |
+| iphone-14-pro      |        393 |         852 |
+| iphone-14-pro-max  |        490 |         932 |
+| iphone-13          |        390 |         844 |
+| iphone-13-mini     |        360 |         780 |
+| iphone-13-pro      |        390 |         844 |
+| iphone-13-pro-max  |        428 |         926 |
+| iphone-12          |        390 |         844 |
+| iphone-12-mini     |        360 |         780 |
+| iphone-12-pro      |        390 |         844 |
+| iphone-12-pro-max  |        428 |         926 |
+| iphone-11          |        414 |         896 |
+| iphone-11-pro      |        375 |         812 |
+| iphone-11-pro-max  |        414 |         896 |
+| iphone-xr          |        414 |         896 |
+| iphone-x           |        375 |         812 |
+| iphone-6+          |        414 |         736 |
+| iphone-se2         |        375 |         667 |
+| iphone-8           |        375 |         667 |
+| iphone-7           |        375 |         667 |
+| iphone-6           |        375 |         667 |
+| iphone-5           |        320 |         568 |
+| iphone-4           |        320 |         480 |
+| iphone-3           |        320 |         480 |
+| iphone-zero        |        300 |         640 |
+| iphone-ultra-max   |        520 |        1080 |
+| pixel-ultra        |        412 |         915 |
+| pixel-ultra-xl     |        480 |        1040 |
+| pixel-fold         |        768 |         947 |
+| galaxy-aero        |        384 |         854 |
+| galaxy-fold-open   |        673 |         841 |
+| galaxy-fold-closed |        345 |         821 |
+| samsung-s10        |        360 |         760 |
+| samsung-note9      |        414 |         846 |
+| surface-duo        |        540 |         720 |
+| surface-studio     |       2400 |        1600 |
+| desktop-wide       |       1920 |        1080 |
+| desktop-ultrawide  |       3440 |        1440 |
+| desktop-square     |       1200 |        1200 |
+| cinema-wall        |       5120 |        1440 |
+
+### Troubleshooting and Best Practices
+
+Many sites compute layout at load time and will not adapt cleanly if the viewport changes later. If you notice issues, you may want to run your test suite entirely for each viewport instead of changing the viewport before taking each screenshot.
+
+For example, in Playwright you can create a separate browser context for each viewport size.
+
+{% code title="playwright.config.ts" %}
+```ts
+import { defineConfig, devices } from "@playwright/test";
+
+export default defineConfig({
+  projects: [
+    {
+      name: "chromium-mobile",
+      use: {
+        ...devices["Desktop Chrome"],
+        channel: "chrome",
+      },
+    },
+    {
+      name: "chromium-mobile",
+      use: {
+        ...devices["Desktop Chrome"],
+        channel: "chrome",
+        viewport: { width: 402, height: 874 }, // iPhone 7 viewport
+      },
+    },
+  ],
+});
+```
+{% endcode %}
+
+You can also run `page.setViewportSize()` before navigating to the page to ensure the layout is computed correctly.
+
+{% code title="example.ts" %}
+```ts
+await page.setViewportSize({
+  width: 640,
+  height: 480,
+});
+await page.goto("https://example.com");
+```
+{% endcode %}
+
+***
+
+Learn how to set up visual testing in Storybook (\<v8) with Argos.
+
+This guide keeps your existing Storybook workflow.
+
+[Storycap](https://github.com/reg-viz/storycap) crawls your stories, captures screenshots, and prepares them for upload to Argos.
+
+To integrate Argos with a legacy version of Storybook (\<v8), use Storycap as the capture layer. If you use Storybook v8 or later, switch to the [Storybook Test Runner Quickstart](../storybook-test-runner-quickstart.md).
+
+### Prerequisites
+
+To get the most out of this guide, you'll need to:
+
+* [Use Storybook < v8](https://storybook.js.org/docs/get-started/install)
+* [Create your project in Argos](https://app.argos-ci.com/new)
+
+{% hint style="info" %}
+If you use a recent version of Storybook (>v8), follow our [modern Storybook guide](/broken/pages/be49ca9d9d843f6325697d615dd94be1cd636b94).
+{% endhint %}
+
+<details>
+
+<summary>When to use this guide</summary>
+
+Use this setup when your team still runs Storybook 6 or 7.
+
+It works well in CI. You can capture from a deployed URL or a local static build.
+
+If you need to capture non-Storybook pages, see [Capture Screenshots from URLs](../capture-screenshots-from-urls.md).
+
+</details>
+
+{% stepper %}
+{% step %}
+#### Install
+
+{% tabs %}
+{% tab title="npm" %}
+{% code title="Install (npm)" %}
+```
+npm i --save-dev @argos-ci/cli storycap
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="yarn" %}
+{% code title="Install (yarn)" %}
+```
+yarn add --dev @argos-ci/cli storycap
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="pnpm" %}
+{% code title="Install (pnpm)" %}
+```
+pnpm add --save-dev @argos-ci/cli storycap
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="bun" %}
+{% code title="Install (bun)" %}
+```
+bun add --dev @argos-ci/cli storycap
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+{% hint style="success" %}
+Install both packages together. `storycap` captures screenshots. `@argos-ci/cli` uploads them.
+{% endhint %}
+
+Read the [Argos Command Line Interface](../argos-command-line-interface-cli.md) guide if you need advanced upload options.
+{% endstep %}
+
+{% step %}
+#### Capture screenshots
+
+Choose the path that matches your pipeline.
+
+A deployed Storybook is the simplest option. A local static build gives you full control and removes external network dependencies.
+
+There are two ways to capture screenshots of your Storybook:
+
+* If your Storybook is running and accessible via an URL, add this command to your CI pipeline to capture screenshots of your stories:
+
+{% code title="Capture screenshots (Storycap)" %}
+```sh
+# Capture screenshots of your stories
+npm exec -- storycap <STORYBOOK-URL> --outDir ./screenshots
+```
+{% endcode %}
+
+{% hint style="info" %}
+Use a deployed URL when CI can reach it without extra authentication. This keeps the job shorter.
+{% endhint %}
+
+* If your Storybook is not deployed, you need to serve your Storybook before capturing the screenshots. Use the following commands:
+
+{% code title="Build and screenshot Storybook locally" %}
+```sh
+# Build Storybook
+npm exec -- storybook build --output-dir ./storybook-static
+
+# Screenshot Storybook with Storycap
+npm exec -- storycap --serverCmd "npx http-server ./storybook-static --port 6006" http://127.0.0.1:6006/ --outDir ./screenshots
+```
+{% endcode %}
+
+{% hint style="warning" %}
+Serve the exact static output you want to review. Different env flags or assets can create noisy diffs.
+{% endhint %}
+
+Read the [Storycap documentation](https://github.com/reg-viz/storycap) to learn more about the installation and advanced usages.
+
+Add `./screenshots` to your `.gitignore` file to avoid committing generated artifacts.
+
+<details>
+
+<summary>Troubleshooting unstable screenshots</summary>
+
+If your screenshots look inconsistent between runs, stabilize page state before capture.
+
+Start with [Wait for Loading](../wait-for-loading.md), [Stabilize Date & Time](../stabilize-date-and-time.md), and [Browser Glitches](../browser-glitches.md).
+
+</details>
+{% endstep %}
+
+{% step %}
+#### Upload screenshots on CI
+
+Run this command after screenshot capture completes.
+
+Argos uploads every file in `./screenshots` and associates the build with your branch or pull request.
+
+{% code title="Upload screenshots to Argos" %}
+```
+npm exec -- argos upload --token <ARGOS_TOKEN> ./screenshots
+```
+{% endcode %}
+
+{% hint style="info" %}
+The value of ARGOS\_TOKEN is available in your project settings on Argos.
+{% endhint %}
+
+{% hint style="warning" %}
+You need a [Baseline build](../baseline-build.md) to compare new screenshots. Without one, builds remain orphan until you run Argos on your reference branch.
+{% endhint %}
+
+{% hint style="success" %}
+If your team validates preview environments, pair this setup with [Run on preview deployments](../run-on-preview-deployments.md).
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+
+### Congratulations on installing Argos! 👏
+
+After committing and pushing your changes, the Argos check status will appear on your pull request in GitHub (or GitLab).
+
+Your team can now review UI changes before merge, catch regressions early, and keep screenshots tied to each branch.
+
+As your suite grows, you can also scale capture strategies with [Parallel testing (sharding)](../parallel-testing-sharding.md) and enrich runs with [Adding Screenshot metadata](../adding-screenshot-metadata.md).
+
+Welcome on board!
+
+### Additional resources
+
+* [Argos + Storybook legacy example](https://github.com/argos-ci/argos-javascript/tree/main/examples/storybook-legacy)
+* [Storybook Test Runner Quickstart](../storybook-test-runner-quickstart.md)
+* [How Argos detects visual differences](../how-argos-detects-visual-differences.md)
+* [Flaky Tests](../flaky-tests.md)
+* [Storycap documentation](https://github.com/reg-viz/storycap)
+* [Storybook documentation](https://storybook.js.org/docs)
+
+***
+
+[Join our Discord](https://argos-ci.com/discord), [submit an issue on GitHub](https://github.com/argos-ci/argos/issues) or just [send an email](mailto:contact@argos-ci.com) if you need help.
+
+***
+
+{% hint style="info" %}
+Spend management is available on Pro and Enterprise plans (usage based)
+
+Spend management lets you notify or automatically take action on your account when your team hits a set spend amount. The actions you can take are:
+
+* [Receive a notification](large-document.md#alert-threshold-notifications) when you reach certain thresholds of your spend amount
+* [Pause the builds on all your projects](large-document.md#pausing-projects)
+{% endhint %}
+
+{% hint style="warning" %}
+Setting a spend amount does not automatically stop usage. If you want to pause all your projects at a certain amount, you must [enable the option](large-document.md#pausing-projects).
+{% endhint %}
+
+The spend amount is set per billing cycle.
+
+Setting the amount halfway through a billing cycle considers your current spend. You can increase or decrease your spend amount as needed. If you configure it below the current monthly spend, Spend Management will trigger any configured actions (including pausing all projects).
+
+### What does Spend Management include?
+
+The spend amount that you set covers additional screenshots that go beyond your plan usage for all projects on your team.
+
+It does not include separate **add-ons**, which Argos charges per billing period.
+
+#### How Argos checks your spend amount
+
+Argos checks your additional screenshots usage often to determine if you are approaching or have exceeded your spend amount. This check happens at every build processed by Argos.
+
+### Managing your spend amount
+
+To enable spend management, you must have an **Owner** role on your team.
+
+{% stepper %}
+{% step %}
+#### From the dashboard
+
+Select your team from the scope selector.
+{% endstep %}
+
+{% step %}
+#### Open team settings
+
+Select the **Settings** tab and go to the **Billings** section.
+{% endstep %}
+
+{% step %}
+#### Enable Spend Management
+
+Scroll to **Spend Management** and enable the switch:
+
+![Spend Management Enabled](<../.gitbook/assets/spend management section 9076213ed403afcd2136d0f06cc85c8b.jpg>)
+{% endstep %}
+
+{% step %}
+#### Configure spend amount
+
+Set your spend amount at which you want to be notified or take action.
+{% endstep %}
+
+{% step %}
+#### Pause projects (optional)
+
+Choose to [pause all projects](large-document.md#pausing-projects) when you reach your spend amount.
+{% endstep %}
+{% endstepper %}
+
+### Alert threshold notifications
+
+When you set a spend amount, Argos will send an email to all your team owner members when spending on your team reaches **50%**, **75%**, and **100%** of the spend amount.
+
+It's not currently possible to customize the alert threshold notifications.
+
+### Pausing projects
+
+Argos provides an option to automatically pause the builds for all of your projects when your spend amount is reached. This option is on by default.
+
+{% stepper %}
+{% step %}
+#### Enable and set spend amount
+
+In the **Spend Management** section of your team's settings, enable and set your [**spend amount**](large-document.md#managing-your-spend-amount).
+{% endstep %}
+
+{% step %}
+#### Ensure Pause builds is enabled
+
+Ensure the **Pause builds** switch is **Enabled**.
+{% endstep %}
+
+{% step %}
+#### Confirm the action
+
+Confirm the action by entering the team slug and select **Continue**.
+{% endstep %}
+
+{% step %}
+#### Automatic pause when reached
+
+When your team reaches the spend amount, Argos automatically pauses the builds for all projects on your team.
+
+When you try to create a new build, you will get an error message that the builds are paused due to reaching the spend amount. It will make your CI builds fail until you increase your spend amount or disable the pause builds option.
+{% endstep %}
+{% endstepper %}
+
+#### Unpausing projects
+
+To unpause your projects, you must increase your spend amount or disable the pause builds option.
+
+***
+
+### The Tests dashboard
+
+The Tests dashboard gives you a project-wide view of test stability. It lists all tests sorted by flakiness score so the most flaky tests show up first.
+
+![Tests dashboard showing a list of tests with flakiness metrics](<../.gitbook/assets/tests dashboard 0e272203e4b55b8d11f669564169009f.png>)
+
+_A project Tests dashboard with flakiness metrics_
+
+### Open the dashboard
+
+{% stepper %}
+{% step %}
+#### Open your project
+
+Open your project in Argos.
+{% endstep %}
+
+{% step %}
+#### Go to Tests
+
+Click the **Tests** tab.
+{% endstep %}
+{% endstepper %}
+
+### How tests are ranked
+
+Tests are sorted by **flakiness score** (descending). The tests at the top are the most flaky.
+
+### Columns explained
+
+* **Test**: The latest screenshot uploaded for the test, the test name, and the build name.
+* **Last change**: The most recent change detected on an auto-approved build during the selected period.
+* **Flakiness**: A score that summarizes how flaky a test is based on its stability and consistency.
+* **Changes**: The number of changes detected for the test during the selected period.
+* **Stability**: The ratio of changes to total reference builds. A lower stability rate means the test is more likely to be flaky.
+* **Consistency**: The ratio of one-off changes to total changes. A lower consistency rate means the test is more likely to be flaky.
+
+### Filter and time range
+
+* Filter tests by **build name** to focus on a subset of runs.
+* Choose a **time period** to control which changes and scores are included.
+
+### Open a test page
+
+Click any row to open the detailed test page and review history and stability details. See [Flaky Tests](../flaky-tests.md) for more information.
+
+
+
+
+
+***
+
+Subset builds are designed for CI runs that don't execute the full E2E test suite on a branch. When a build is marked as subset, Argos ignores removed screenshots and only notifies you about changed and added screenshots from the tests you did run.
+
+This is helpful for speeding up feature-branch validation while still getting reliable visual feedback from the relevant tests.
+
+{% hint style="info" %}
+You still need to run your full test suite on your main branch to create and update **baseline builds**. Subset builds are not eligible as baselines. See https://argos-ci.com/docs/baseline-build.
+{% endhint %}
+
+### Diagram flow
+
+Feature branch → Compare against baseline
+
+Main branch
+
+CI run starts
+
+* Run full E2E suite
+* Upload screenshots
+* Baseline build (added · changed · removed)
+
+OR
+
+CI run starts with ARGOS\_SUBSET=true or --subset
+
+* Run partial suite
+* Upload screenshots
+* Subset build notifications (only changed and added screenshots)
+
+### Enable subset builds
+
+You can enable subset builds in any Argos SDK or the CLI.
+
+#### Environment variable
+
+Set the environment variable `ARGOS_SUBSET` to `"true"` in your CI configuration.
+
+.github/workflows/ci.yml
+
+{% code title=".github/workflows/ci.yml" %}
+```yml
+steps:
+  - name: Run tests
+    run: npm test
+    env:
+      ARGOS_SUBSET: "true"
+```
+{% endcode %}
+
+#### CLI
+
+Use the `--subset` flag with the CLI.
+
+{% tabs %}
+{% tab title="npm" %}
+{% code title="npm" %}
+```
+npm exec -- argos upload --subset ./screenshots
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="yarn" %}
+{% code title="yarn" %}
+```
+yarn run argos upload --subset ./screenshots
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="pnpm" %}
+{% code title="pnpm" %}
+```
+pnpm exec -- argos upload --subset ./screenshots
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="bun" %}
+{% code title="bun" %}
+```
+bun x argos upload --subset ./screenshots
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+#### SDK option
+
+Most SDKs expose a `subset` option on the upload configuration.
+
+upload.js
+
+{% code title="upload.js" %}
+```js
+import { upload } from "@argos-ci/core";
+
+await upload({
+  root: "./screenshots",
+  subset: true,
+});
+```
+{% endcode %}
+
+### Examples
+
+#### Node.js
+
+scripts/argos-upload.js
+
+{% code title="scripts/argos-upload.js" %}
+```js
+import { upload } from "@argos-ci/core";
+
+await upload({
+  root: "./screenshots",
+  subset: true,
+});
+```
+{% endcode %}
+
+#### Playwright
+
+For Playwright, set `ARGOS_SUBSET=true` in your CI job. The reporter will mark the build as a subset build.
+
+.github/workflows/ci.yml
+
+{% code title=".github/workflows/ci.yml" %}
+```yml
+steps:
+  - uses: actions/checkout@v4
+  - uses: actions/setup-node@v4
+  - run: npm ci
+  - name: Run Playwright tests
+    env:
+      ARGOS_SUBSET: "true"
+    run: npx playwright test
+```
+{% endcode %}
+
+#### Cypress
+
+For Cypress, set `ARGOS_SUBSET=true` in your CI job that runs Cypress and uploads screenshots.
+
+.github/workflows/ci.yml
+
+{% code title=".github/workflows/ci.yml" %}
+```yml
+steps:
+  - uses: actions/checkout@v4
+  - uses: actions/setup-node@v4
+  - run: npm ci
+  - name: Run Cypress tests
+    env:
+      ARGOS_SUBSET: "true"
+    run: npx cypress run
+```
+{% endcode %}
+
+### Troubleshooting / FAQ
+
+<details>
+
+<summary>Why are removed screenshots ignored?</summary>
+
+Subset builds only include a portion of your test suite, so missing screenshots may simply be from skipped tests, not actual deletions. Ignoring removals avoids false positives.
+
+</details>
+
+<details>
+
+<summary>Why can’t a subset build be a baseline?</summary>
+
+Baselines must represent the full test suite. Subset builds are incomplete by design and would cause missing screenshots in comparisons.
+
+</details>

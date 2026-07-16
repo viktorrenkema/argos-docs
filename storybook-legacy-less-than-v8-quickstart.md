@@ -1,4 +1,4 @@
-# 🤖 Storybook Legacy (\\\<v8) Quickstart
+# Storybook Legacy (\\\<v8) Quickstart
 
 Learn how to set up visual testing in Storybook (\<v8) with Argos.
 

@@ -1,4 +1,4 @@
-# 🍥 Responsive viewports
+# Responsive viewports
 
 Argos lets you capture the same page at multiple breakpoints with a single test. Configure viewports once and get consistent responsive coverage across Playwright, Cypress and Puppeteer.
 
