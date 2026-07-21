@@ -1,8 +1,22 @@
 # Table of contents
 
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: true
+    downloadLink: true
+    grouping: by-tag
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: acmeinctesting
+  ```
+
 ## Non-docs
 
-* [Large changelog](README.md)
+* [Visible repro change](README.md)
+* [Large changelog](<README (3).md>)
 * [Large document](non-docs/large-document.md)
 * [🍭 Getting started](<README (1).md>)
 * [🤖 Most mutations](non-docs/most-mutations.md)
