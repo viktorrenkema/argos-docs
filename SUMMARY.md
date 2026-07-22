@@ -15,8 +15,7 @@
 
 ## Non-docs
 
-* [Visible repro change](README.md)
-* [Large changelog](<README (3).md>)
+* [Large changelog](README.md)
 * [Large document](non-docs/large-document.md)
 * [🍭 Getting started](<README (1).md>)
 * [🤖 Most mutations](non-docs/most-mutations.md)
@@ -29,6 +28,7 @@
 ## Diffing
 
 * [Diff 2.0](<README (1) (1).md>)
+* [Page added](diffing/page-added.md)
 
 ***
 
