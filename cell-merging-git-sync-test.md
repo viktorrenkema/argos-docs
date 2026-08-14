@@ -4,6 +4,8 @@ description: Test page for horizontal and vertical table cell merging through Gi
 
 # Cell merging Git Sync test
 
+<!-- Re-imported after deploying cell-merge parsing support. -->
+
 This 3×3 Text table contains one horizontal merge and one vertical merge.
 
 <table>
