@@ -1,11 +1,11 @@
 # Table of contents
 
 * ```yaml
-  type: builtin:openapi
   props:
     models: true
     downloadLink: true
     grouping: by-tag
+  type: builtin:openapi
   dependencies:
     spec:
       ref:
@@ -15,7 +15,8 @@
 
 ## Non-docs
 
-* [Large changelog](README.md)
+* [Tables](README.md)
+* [Large changelog](<README (3).md>)
 * [Large document](non-docs/large-document.md)
 * [Cell merging Git Sync test](cell-merging-git-sync-test.md)
 * [🍭 Getting started](<README (1).md>)
