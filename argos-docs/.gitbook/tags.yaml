@@ -1,0 +1,22 @@
+- tag: '101'
+  label: '101'
+  icon: baby
+  color: blue
+- tag: new-tag
+  label: New tag
+  icon: lychee
+  color: orange
+- tag: beta
+  label: Beta
+  icon: rectangle-beta
+  color: $danger
+- tag: success
+  label: Success
+  icon: square-check
+  color: green
+- tag: grey
+  label: Grey
+- tag: love-diffs
+  label: Love diffs
+  emoji: 💌
+  color: red

@@ -1,0 +1,373 @@
+/**
+ * Button reset - using :where to reduce specificity to 0
+ * allowing overrides from utilities and other css modules
+ */
+:where(.button) {
+  /** reset browser button styles */
+  align-items: center;
+  appearance: none;
+  flex-basis: auto;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  outline: none;
+  user-select: none;
+  text-decoration-line: none;
+}
+
+.button {
+  border-radius: 6px;
+  height: var(--button-size);
+  display: flex;
+  gap: theme(spacing.2);
+  font-family: theme(fontFamily.sans);
+  @apply transition;
+  padding-inline: var(--padding-inline-size, theme(spacing.3));
+  & > * {
+    @apply transition-opacity;
+  }
+}
+
+.button[data-pressed="true"],
+.button:active {
+  transform: scale(0.98);
+
+  /* & > * {
+        opacity: 0.3;
+    } */
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button[data-focus-visible="true"]:focus {
+  box-shadow: theme(boxShadow.focus-ring);
+  outline: transparent solid 2px;
+}
+
+.skeleton {
+  visibility: hidden;
+}
+
+/* Variations */
+.primary,
+.merge,
+.success,
+.danger,
+.upgrade {
+  color: var(--sp-color-bg-base);
+  /* Standard shadow on the primary btn */
+  --shadow: rgba(0, 0, 0, 0.05);
+  --shadow-2: rgba(31, 41, 51, 0.06);
+  box-shadow:
+            /* Shadow */ 0px 2px 2px 0px var(--shadow),
+    0px 8px 14px 3px var(--shadow-2),
+    /* Inner top and bottom border shadows */ inset 0 -1px 0.4px 0 rgba(0, 0, 0, 0.2),
+    inset 0 1px 0.4px 0 #ffffff33;
+}
+
+.primary:hover,
+.merge:hover,
+.success:hover,
+.danger:hover,
+.upgrade:hover {
+  /* Increased shadow on hover for primary btn */
+  --shadow: rgba(0, 0, 0, 0.12);
+  --shadow-2: rgba(31, 41, 51, 0.1);
+  box-shadow: 0px 2px 2px 0px var(--shadow), 0px 8px 14px 3px var(--shadow-2),
+    /* Inner top and bottom border shadows */ inset 0 -1px 0.4px 0 rgba(0, 0, 0, 0.2),
+    inset 0 1px 0.4px 0 #ffffff33;
+}
+
+.button:not(.secondary)[data-pressed="true"],
+.button:not(.secondary):active {
+  box-shadow: 0px 0px 0px 0px var(--shadow), 0px 0px 0px 0px var(--shadow-2),
+    inset 0 -1px 0.4px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0.4px 0 #ffffff33;
+}
+
+/* Primary */
+.primary {
+  background-color: var(--sp-color-action-bg-primary-default);
+}
+.primary:hover {
+  background: var(--sp-color-primary-600);
+}
+/* 
+.primary .label {
+    color: var(--sp-color-primary-100);
+    text-shadow:
+        0px -1px 1px rgba(0, 0, 0, 0.05),
+        0px 1px 2px rgba(0, 0, 0, 0.15);
+} */
+
+/* Secondary */
+.secondary {
+  --dark-300: #374151;
+  --dark-400: #2d323a;
+  --dark-500: #2b2e39;
+  --dark-600: #22272e;
+  --shadow: rgba(0, 0, 0, 0.07);
+  --shadow-2: rgba(31, 41, 51, 0.08);
+  background: var(--sp-color-bg-secondary);
+  border: 1px solid var(--sp-color-bg-suggestion-hover);
+}
+
+.secondary:hover {
+  background: var(--sp-color-border-base);
+
+  @apply transition;
+}
+
+.secondary > span {
+  color: var(--dark-300);
+}
+
+:global(.theme-color-dark) {
+  .secondary {
+    background-color: var(--dark-600);
+    border: 1px solid var(--dark-500);
+  }
+  .secondary:hover {
+    background: var(--dark-500);
+    border: 1px solid var(--dark-400);
+  }
+
+  .secondary .label {
+    color: var(--sp-color-border-table);
+  }
+}
+
+/* Merge */
+.merge {
+  background-color: var(--sp-color-action-bg-merge-default);
+}
+.merge:hover {
+  background-color: var(--sp-color-action-bg-merge-hover);
+}
+
+/* Success */
+.success {
+  background-color: var(--sp-color-action-bg-success-default);
+}
+.success:hover {
+  background-color: var(--sp-color-action-bg-success-hover);
+}
+
+/* Danger */
+.danger {
+  background-color: var(--sp-color-action-bg-danger-default);
+}
+.danger:hover {
+  background-color: var(--sp-color-action-bg-danger-hover);
+}
+
+/* Upgrade */
+.upgrade {
+  background-color: var(--sp-color-action-bg-upgrade-default);
+}
+.upgrade:hover {
+  background-color: var(--sp-color-action-bg-upgrade-hover);
+}
+
+/* Secondary, Blank, Nested  */
+.secondary {
+  background-color: var(--sp-color-action-bg-secondary-default);
+  border: 1px solid var(--sp-color-border-control);
+}
+.secondary,
+.blank,
+.nested {
+  color: var(--sp-color-text-muted);
+}
+.blank:hover,
+.nested:hover {
+  color: var(--sp-color-text-base);
+}
+.blank,
+.nested {
+  background-color: transparent;
+}
+.blank:hover {
+  background-color: var(--sp-color-action-bg-secondary-hover);
+}
+.nested:hover {
+  background-color: var(--sp-color-action-bg-nested-hover);
+}
+
+.blank.active,
+.nested.active {
+  background-color: var(--sp-color-action-bg-active);
+  color: var(--sp-color-action-text-active);
+}
+
+.blank.inverted,
+.nested.inverted {
+  background-color: var(--sp-color-action-bg-blank-inverted-default);
+  color: var(--sp-color-text-inverted);
+}
+.blank.inverted:hover,
+.nested.inverted:hover {
+  background-color: var(--sp-color-action-bg-blank-inverted-hover);
+}
+
+/* Link-style ? */
+.link {
+  background-color: transparent;
+  color: var(--sp-color-button-inline-text-default);
+  padding: unset;
+  display: inline-flex;
+  text-decoration-line: underline;
+}
+.link:hover {
+  color: var(--sp-color-button-inline-text-hover);
+}
+.link:focus {
+  color: var(--sp-color-button-inline-text-focus);
+}
+
+/* Pill */
+
+.pill {
+  /* component vars */
+  --shadow-border-300: 0px 0px 0px 3px;
+  --teal-400-transparent-25: hsl(195deg 53% 55% / 25%);
+  /* end component vars */
+  width: fit-content;
+  padding: theme(spacing.1) theme(spacing[2.5]);
+  border-radius: theme(borderRadius.full);
+  color: var(--sp-color-button-pill-text);
+  background-color: var(--sp-color-bg-secondary);
+  border: 1px solid transparent;
+  /* Since the text in suggestions pill can be multiline, 
+    * its height needs to adapt to its content and the text to align left.
+    * We also need to align itself center in the flex flow to avoid siblind pills to grow in height. */
+  height: auto;
+  text-align: left;
+  align-self: center;
+}
+
+.pill:hover {
+  background-color: var(--sp-color-button-pill-bg-active);
+  border: 1px solid var(--sp-color-button-pill-border);
+}
+
+.pill:active,
+.pill:focus-visible {
+  box-shadow: var(--shadow-border-300) var(--teal-400-transparent-25);
+}
+
+/* Close - button without background nor size (ie: Alert close button) */
+.close {
+  --button-size: fit-content;
+  background-color: transparent;
+  color: var(--sp-color-text-muted);
+  width: var(--button-size);
+  height: var(--button-size);
+}
+.close:hover {
+  color: var(--sp-color-text-base);
+}
+
+/* Sizes */
+
+.small {
+  --button-size: theme(size.6);
+  --padding-inline-size: theme(spacing.2);
+}
+
+.medium {
+  --button-size: theme(size.8);
+  --padding-inline-size: theme(spacing.3);
+}
+
+.large {
+  --button-size: theme(size.9);
+  --padding-inline-size: theme(spacing.3);
+}
+
+.xlarge {
+  --button-size: theme(size.10);
+  --padding-inline-size: theme(spacing.3);
+}
+
+/* --- Disabled state --- */
+
+.disabled,
+.disabled:hover,
+.disabled:active .disabled.active {
+  transition-duration: 0;
+  opacity: 1;
+  background-color: var(--sp-color-bg-disabled);
+  background-image: none;
+  color: var(--sp-color-text-light);
+  box-shadow: none;
+  outline: none;
+  border-color: transparent;
+}
+
+.nested.disabled,
+.nested.disabled:hover,
+.nested.disabled:active,
+.nested.disabled.active {
+  background-color: transparent;
+}
+
+.pill.disabled,
+.pill.disabled:hover,
+.pill.disabled:active,
+.pill.disabled.active,
+.pill.disabled:active {
+  transition-duration: 0;
+  opacity: 1;
+  background-color: var(--sp-color-bg-disabled);
+  background-image: none;
+  border-color: var(--sp-color-action-border-default);
+  color: var(--sp-color-text-light);
+  box-shadow: none;
+  outline: none;
+}
+
+/* --- Customization classes --- */
+
+.rounded {
+  border-radius: theme(borderRadius.full);
+}
+
+.button.iconOnly {
+  --icon-size: theme(spacing.4);
+  width: var(--button-size);
+  height: var(--button-size);
+  padding: 0;
+
+  &.small {
+    --icon-size: theme(spacing[3.5]);
+  }
+}
+
+@media (max-width: theme(screens.md)) {
+  .button.iconOnlyMd {
+    --icon-size: theme(spacing.4);
+    width: var(--button-size);
+    height: var(--button-size);
+    padding: 0;
+
+    &.small {
+      --icon-size: theme(spacing[3.5]);
+    }
+  }
+}
+
+@media (max-width: theme(screens.lg)) {
+  .button.iconOnlyLg {
+    --icon-size: theme(spacing.4);
+    width: var(--button-size);
+    height: var(--button-size);
+    padding: 0;
+
+    &.small {
+      --icon-size: theme(spacing[3.5]);
+    }
+  }
+}
