@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/openapi.yaml#/components/schemas/GitSyncSiteConfig
+site:
+  title: Argos Docs
+  structure:
+    - type: space
+      key: space-1
+      title: Argos Docs
+      path: argos-docs
+      default: true
+      content:
+        directory: ./argos-docs
