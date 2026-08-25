@@ -19,6 +19,7 @@
 * [Large changelog](non-docs/readme-3.md)
 * [Large document](non-docs/large-document.md)
 * [Cell merging Git Sync test](non-docs/cell-merging-git-sync-test.md)
+* [Cell merging Git Sync test #2](non-docs/cell-merging-git-sync-test-2.md)
 * [🍭 Getting started](non-docs/readme-1.md)
 * [🤖 Most mutations](non-docs/most-mutations.md)
 * [🔮 All blocks](non-docs/all-blocks/README.md)
