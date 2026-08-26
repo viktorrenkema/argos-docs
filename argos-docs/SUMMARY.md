@@ -13,9 +13,13 @@
         spec: acmeinctesting
   ```
 
+## Site-level CRs
+
+* [Site structure research](README.md)
+
 ## Non-docs
 
-* [Tables](README.md)
+* [Tables](<README (1).md>)
 * [Large changelog](non-docs/readme-3.md)
 * [Large document](non-docs/large-document.md)
 * [Cell merging Git Sync test](non-docs/cell-merging-git-sync-test.md)
