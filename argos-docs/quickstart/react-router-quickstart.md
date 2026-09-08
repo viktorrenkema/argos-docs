@@ -1,6 +1,10 @@
 # React Router Quickstart
 
-Learn how to setup visual testing in a React Router (previously Remix) project using Argos.
+Learn how to set up visual testing in a React Router (previously Remix) project using Argos.
+
+{% hint style="warning" %}
+**Test content:** This temporary note exists to validate documentation changes.
+{% endhint %}
 
 The best way to integrate Argos with React Router is to setup Playwright in your project.
 
@@ -8,7 +12,6 @@ The best way to integrate Argos with React Router is to setup Playwright in your
 
 To get the most out of this guide, you’ll need to:
 
-* [Use React Router](https://reactrouter.com/)
 * [Install Playwright](https://playwright.dev/docs/intro)
 * [Run Playwright on your CI/CD](https://playwright.dev/docs/ci-intro#on-pushpull_request)
 * [Create your project in Argos](https://app.argos-ci.com/new)

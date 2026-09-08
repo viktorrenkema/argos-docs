@@ -4,7 +4,7 @@ coverY: 0
 coverHeight: 65
 ---
 
-# 🤝 Argos Command Line Interface
+# Argos Command Line Interface
 
 Use the Argos CLI to upload screenshots from your test run to Argos.
 

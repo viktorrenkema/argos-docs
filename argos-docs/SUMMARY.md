@@ -45,7 +45,7 @@
   * [React Router Quickstart](quickstart/react-router-quickstart.md)
   * [Puppeteer Quickstart](quickstart/puppeteer-quickstart.md)
 * [Monorepos setup](monorepos-setup.md)
-* [🤝 Argos Command Line Interface](argos-command-line-interface-cli.md)
+* [Argos Command Line Interface](argos-command-line-interface-cli.md)
 * [Run on preview deployments](run-on-preview-deployments.md)
 * [SAML Single Sign-On](saml-single-sign-on.md)
 * [Parallel testing (sharding)](parallel-testing-sharding.md)
@@ -96,3 +96,4 @@
 * [Spend Management](spend-management.md)
 * [Storybook Legacy (\\\<v8) Quickstart](storybook-legacy-less-than-v8-quickstart.md)
 * [Responsive viewports](responsive-viewports.md)
+* [Snapshot Forecasting (Test Feature)](snapshot-forecasting-test-feature.md)

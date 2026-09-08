@@ -8,7 +8,7 @@ icon: burst-new
 {% update date="2026-07-08" tags="new-releases" %}
 ## GitBook MCP
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/MCP.png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/MCPP.png" alt=""><figcaption></figcaption></figure></div>
 
 GitBook MCP gives AI agents tools to work across your GitBook content and workflows. Use Claude Code, Codex, Cursor, or another MCP client to create sites.
 
@@ -501,7 +501,7 @@ Alongside this improvement, we’ve also added the option to **Copy title as lin
 
 Admins can now [set permissions at a site level](/broken/spaces/NkEGS7hzeqa35sMXQZ4X/pages/LhRX6q09LqLQChgHEgh8#site-permissions), allowing you to control who can view and edit your site content all in one place.
 
-To edit your site’s permissions, head to your site’s Overview page and click the **Permissions** <picture><source srcset="/broken/files/5OsXQaY0jLiJV2qwCfG4" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/site-permissions.svg" alt=""></picture> icon in the top-right corner. You can also open your site’s **Settings** tab and select **Manage permissions**.
+To edit your site’s permissions, head to your site’s Overview page and click the **Permissions** <picture><source srcset="/broken/files/5OsXQaY0jLiJV2qwCfG4" media="(prefers-color-scheme: dark)"><img src="/broken/files/w7HgelnIzCsgLD2t0HeN" alt=""></picture> icon in the top-right corner. You can also open your site’s **Settings** tab and select **Manage permissions**.
 
 #### Improvements
 

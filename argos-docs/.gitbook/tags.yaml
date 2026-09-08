@@ -2,10 +2,6 @@
   label: '101'
   icon: baby
   color: blue
-- tag: new-tag
-  label: New tag
-  icon: lychee
-  color: orange
 - tag: beta
   label: Beta
   icon: rectangle-beta
@@ -15,8 +11,13 @@
   icon: square-check
   color: green
 - tag: grey
-  label: Grey
+  label: Red
+  color: red
 - tag: love-diffs
   label: Love diffs
   emoji: 💌
   color: red
+- tag: new
+  label: NEW
+  icon: burst-new
+  color: blue
