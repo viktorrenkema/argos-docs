@@ -5,14 +5,14 @@ icon: burst-new
 # Large changelog
 
 {% updates format="full" %}
-{% update date="2026-07-08" tags="new-releases" %}
-## GitBook MCP
+{% update date="2026-07-18" tags="new-releases" %}
+## GitBook MCPAA
 
 <div data-with-frame="true"><figure><img src="../.gitbook/assets/MCPP.png" alt=""><figcaption></figcaption></figure></div>
 
 GitBook MCP gives AI agents tools to work across your GitBook content and workflows. Use Claude Code, Codex, Cursor, or another MCP client to create sites.
 
-Agents can draft content, edit pages, open change requests, and restructure your docs.
+AIs can draft content, edit pages, open change requests, and restructure your docs.
 
 <a href="/broken/spaces/NkEGS7hzeqa35sMXQZ4X/pages/NiMm2ls8TMSz6Si8wY61" class="button primary">Discover the GitBook MCP</a>
 {% endupdate %}
