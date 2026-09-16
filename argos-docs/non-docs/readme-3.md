@@ -6,7 +6,7 @@ icon: burst-new
 
 {% updates format="full" %}
 {% update date="2026-07-18" tags="new-releases" %}
-## GitBook MCPAA
+## GitBook MCP
 
 <div data-with-frame="true"><figure><img src="../.gitbook/assets/MCPP.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -20,7 +20,7 @@ AIs can draft content, edit pages, open change requests, and restructure your do
 {% update date="2026-07-07" tags="new-releases,improvements,fixes" %}
 ## Private agent conversations
 
-Agent conversations in change requests can now be marked private, so work-in-progress discussions stay visible only to the people who need to see them.
+sddsdsdsdsAgent conversations in change requests can now be marked private, so work-in-progress discussions stay visible only to the people who need to see them.
 
 ## Team management in site members
 
