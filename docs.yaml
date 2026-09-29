@@ -1,10 +1,10 @@
 $schema: https://api.gitbook.com/openapi.yaml#/components/schemas/GitSyncSiteConfig
 site:
-  title: Argos Docs
+  title: Argos Docs (Hive v2)
   structure:
     - type: space
       key: space-1
-      title: Argos Docs
+      title: Documentation
       path: argos-docs
       default: true
       content:
