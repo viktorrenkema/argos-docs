@@ -8,31 +8,7 @@
 
 #### Heading 3
 
-Gitbook is a block-based editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page. small copy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Gitbook is an editor, meaning you can add many kinds of blocks to your content — from standard text and images to blocks. Your pages can include any combination of blocks you want, and there’s no limit to the number of blocks you can have on a page. small copy
 
 **Bold** [<sup><sub>~~_<mark style="color:$primary;background-color:$success;">**paragraph**</mark>_~~<sub></sup>](#user-content-fn-1)[^1]
 
@@ -40,29 +16,19 @@ _Italic paragraph_
 
 ~~Strikethrough paragraph~~
 
+- [x] done
+- [ ] infinito
+- [x] <sub><mark style="background-color:cyan;">**afgerond**<mark style="background-color:cyan;"></sub>
+- [ ] new entry
 
+- no order here + edit
+- still none + edit
 
-* [x] done
-* [ ] infinito
-* [x] <sub><mark style="background-color:cyan;">**afgerond**<mark style="background-color:cyan;"></sub>
-* [ ] new entry
+- Numero 1
+- Dos 2
+- Tres 3
 
-
-
-* no order here + edit
-* still none + edit
-
-
-
-* Numero 1
-* Dos 2
-* Tres 3
-
-
-
-***
-
-
+---
 
 Variable: <code class="expression">space.vars.MY_NAME</code>
 
@@ -84,13 +50,11 @@ $$(x * x^2)$$
 
 Some text with inline elements inserted into it:
 
-<code class="expression">page.vars</code> TEST\_1: <code class="expression">page.vars.NAME_OF_MALE_CAT</code>
+<code class="expression">page.vars</code> TEST_1: <code class="expression">page.vars.NAME_OF_MALE_CAT</code>
 
-TEST\_2: <code class="expression">NAME_OF_FEMALE_CAT</code>
+TEST_2: <code class="expression">NAME_OF_FEMALE_CAT</code>
 
-
-
-***
+---
 
 > Something philosophical 💭
 
@@ -102,8 +66,8 @@ Many blocks can be nested. Try dragging a heading or paragraph into here :eyes: 
 
 <summary>Improved</summary>
 
-* We’ve tweaked the prompt used for GitBook Assistant to improve the page context and reduce the number of repeated searches. We’re constantly improving this, so there’ll be more fine tuning in the coming weeks and months.
-* Part improvement, one part fix: We’ve added another filter to all the charts in the **Traffic** page in your site’s **Insights** panel. Before, the page only filtered the first chart to show page events — other charts didn’t have this filter, which resulted in some inconsistencies.
+- We’ve tweaked the prompt used for GitBook Assistant to improve the page context and reduce the number of repeated searches. We’re constantly improving this, so there’ll be more fine tuning in the coming weeks and months.
+- Part improvement, one part fix: We’ve added another filter to all the charts in the **Traffic** page in your site’s **Insights** panel. Before, the page only filtered the first chart to show page events — other charts didn’t have this filter, which resulted in some inconsistencies.
 
 </details>
 
@@ -111,19 +75,17 @@ Many blocks can be nested. Try dragging a heading or paragraph into here :eyes: 
 
 <summary>Fixed</summary>
 
-* Fixed a bug that would occur when some blocks (e.g. stepper, quote) only had a single block inside and you tried to open the **Block options** palette for that single block. Rather than the child block being selected, it would select the parent block. Now it will select the child block as expected.
-* Fixed the padding that appeared around the image options toolbar with a recent update.
-* Added aliases to the code block syntax selection menu, and fixed an issue that meant the text was too light.
-* Fixed the **Share** modal not showing members who have read access to a space due to the space being published to a site.
-* Fixed an issue that meant repos with multiple project directories could sometimes have their assets deduplicated in a strange way after our recent deduplication update. Now imports can happen from outside the project directory, and on export any files imported from outside the project directory will be copied into the project directory to correct its path.
-* Fixed a bug in the editor that meant you couldn’t edit a page slug on long, nested paths. Now the slug text entry box will be split equally and you can view the full nested slug in a tooltip when hovering over that section of the box.
-* Fixed an issue that meant it could be difficult to see menu items in Firefox due to the browser’s CSS scroll fade appearing incorrectly.
-* Fixed the position of the sidebar’s **Drag to resize** trigger area. It’s now aligned with the edge of the sidebar, making it easier to grab.
-* Fixed a bug that meant the inline formatting palette could overflow off the side of the screen. It now stays neatly in bounds, and flips to below your selected text if there isn’t room above it.
+- Fixed a bug that would occur when some blocks (e.g. stepper, quote) only had a single block inside and you tried to open the **Block options** palette for that single block. Rather than the child block being selected, it would select the parent block. Now it will select the child block as expected.
+- Fixed the padding that appeared around the image options toolbar with a recent update.
+- Added aliases to the code block syntax selection menu, and fixed an issue that meant the text was too light.
+- Fixed the **Share** modal not showing members who have read access to a space due to the space being published to a site.
+- Fixed an issue that meant repos with multiple project directories could sometimes have their assets deduplicated in a strange way after our recent deduplication update. Now imports can happen from outside the project directory, and on export any files imported from outside the project directory will be copied into the project directory to correct its path.
+- Fixed a bug in the editor that meant you couldn’t edit a page slug on long, nested paths. Now the slug text entry box will be split equally and you can view the full nested slug in a tooltip when hovering over that section of the box.
+- Fixed an issue that meant it could be difficult to see menu items in Firefox due to the browser’s CSS scroll fade appearing incorrectly.
+- Fixed the position of the sidebar’s **Drag to resize** trigger area. It’s now aligned with the edge of the sidebar, making it easier to grab.
+- Fixed a bug that meant the inline formatting palette could overflow off the side of the screen. It now stays neatly in bounds, and flips to below your selected text if there isn’t room above it.
 
 </details>
-
-
 
 #### Files and images
 
@@ -151,7 +113,7 @@ New content within the second tab
 
 {% include "https://gitbook-x-dev-viktor.firebaseapp.com/s/RUIXByPBQwrYYvtdUBsm/~/reusable/nkefG4Ws6aGVpEqrcGaA/" %}
 
-***
+---
 
 #### Code blocks and tables
 
@@ -203,16 +165,13 @@ New content within the second tab
 
 </code></pre>
 
-
-
 #### Tabs
-
-
 
 #### Stepper
 
 {% stepper %}
 {% step %}
+
 ### First step
 
 Content of step
@@ -221,18 +180,21 @@ With another line, and an image
 {% endstep %}
 
 {% step %}
+
 ### Second step
 
 This is the second step
 {% endstep %}
 
 {% step %}
+
 ## This is the first step
 
 And it's good.
 {% endstep %}
 
 {% step %}
+
 ### Fourth
 
 Some content within this stepper
@@ -243,11 +205,7 @@ Some content within this stepper
 {% endstep %}
 {% endstepper %}
 
-
-
 #### Columns
-
-
 
 {% columns %}
 {% column width="25%" %}
@@ -257,13 +215,12 @@ Test different widths
 {% endcolumn %}
 
 {% column width="75%" %}
+
 ## Ut ligula ipsum, viverra vel hendrerit vitae
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem.
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column width="50%" %}
@@ -273,6 +230,7 @@ Test different widths
 {% endcolumn %}
 
 {% column width="50%" %}
+
 ## Ut ligula ipsum, viverra vel hendrerit vitae
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem.
@@ -281,6 +239,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 
 {% columns fullWidth="true" %}
 {% column width="33.33333333333333%" %}
+
 ## Ut ligula ipsum, viverra vel hendrerit vitae
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem. \
@@ -289,6 +248,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 {% endcolumn %}
 
 {% column width="66.66666666666667%" %}
+
 <h2 align="right">Vertical alignment - top</h2>
 
 <p align="right">Donec eu augue in dui convallis ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem.</p>
@@ -297,6 +257,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 
 {% columns fullWidth="true" %}
 {% column width="33.33333333333333%" %}
+
 ## Ut ligula ipsum, viverra vel hendrerit vitae
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem. \
@@ -305,6 +266,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 {% endcolumn %}
 
 {% column width="66.66666666666667%" %}
+
 <h2 align="right">Vertical alignment - top</h2>
 
 <p align="right">Donec eu augue in dui convallis ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem.</p>
@@ -313,6 +275,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 
 {% columns fullWidth="true" %}
 {% column width="58.333333333333336%" %}
+
 ## Ut ipsum, viverra vel hendrerit vitae
 
 Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamcorper ac elementum sit amet, facilisis sit amet sem. \
@@ -321,6 +284,7 @@ Donec eu augue in dui test ultrices id ac sapien. Phasellus mauris lorem, ullamc
 {% endcolumn %}
 
 {% column width="41.666666666666664%" valign="bottom" %}
+
 <h2 align="right">Vertical alignment - bottom</h2>
 
 <p align="right">Donec eu augue in dui convallis  id ac sapien. Phasellus mauris lorem, ullamcorper sit amet, facilisis sit amet sem.</p>
