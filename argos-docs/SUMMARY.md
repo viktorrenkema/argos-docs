@@ -15,7 +15,8 @@
 
 ## Site-level CRs
 
-* [Site structure research](README.md)
+* [Change counts: prompts to test diffs](README.md)
+* [Site structure research](<README (2).md>)
 
 ## Non-docs
 
