@@ -2,10 +2,30 @@ $schema: https://api.gitbook.com/openapi.yaml#/components/schemas/GitSyncSiteCon
 site:
   title: Argos Docs (Hive v2)
   structure:
-    - type: space
-      key: space-1
-      title: Documentation
-      path: argos-docs
+    - type: section
+      key: section-1
+      title: Argos Docs (Hive v2)
+      path: argos-docs-hive-v2
       default: true
-      content:
-        directory: ./argos-docs
+      children:
+        - type: space
+          key: space-1
+          title: Documentation
+          path: argos-docs
+          default: true
+          content:
+            directory: ./argos-docs
+    - type: section
+      key: section-2
+      title: Changelog
+      path: changelog
+      icon: burst-new
+      children:
+        - type: space
+          key: space-2
+          title: Changelog
+          path: changelog
+          default: true
+          draft: true
+          content:
+            directory: ./changelog
