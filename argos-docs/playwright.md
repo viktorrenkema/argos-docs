@@ -1,3 +1,8 @@
+---
+tags:
+  - autonomous-dem
+---
+
 # Playwright
 
 Improve test debugging and boost your visual testing capabilities by combining Argos with your [Playwright](https://playwright.dev/) tests.

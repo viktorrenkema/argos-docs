@@ -1,3 +1,8 @@
+---
+tags:
+  - core
+---
+
 # Storybook
 
 Integrate visual testing with your Storybook seamlessly using Argos. This SDK allows you to capture and review visual changes in your Storybook components directly within your CI.

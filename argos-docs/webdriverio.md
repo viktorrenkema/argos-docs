@@ -1,3 +1,9 @@
+---
+tags:
+  - autonomous-dem
+  - core
+---
+
 # WebdriverIO
 
 Integrating Argos with your [WebdriverIO](https://webdriver.io/) tests to enable visual testing on your application.

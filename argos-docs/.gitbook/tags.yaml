@@ -21,3 +21,21 @@
   label: NEW
   icon: burst-new
   color: blue
+- tag: advanced-dns-security
+  label: Advanced DNS Security
+  group: products
+- tag: autonomous-dem
+  label: Autonomous DEM
+  group: products
+- tag: core
+  label: Core
+  group: products
+  parent: autonomous-dem
+- tag: access-experience-agent
+  label: Access Experience Agent
+  group: products
+  parent: autonomous-dem
+- tag: ai-powered-adem
+  label: AI-Powered ADEM
+  group: products
+  parent: autonomous-dem

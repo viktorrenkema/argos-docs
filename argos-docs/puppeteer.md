@@ -1,3 +1,8 @@
+---
+tags:
+  - core
+---
+
 # Puppeteer
 
 Integrating Argos with your [Puppeteer](https://github.com/puppeteer/puppeteer) tests to enable visual testing on your application.

@@ -1,3 +1,8 @@
+---
+tags:
+  - autonomous-dem
+---
+
 # Cypress
 
 Boost your visual testing capabilities by combining Argos with your [Cypress](https://www.cypress.io/) tests.
