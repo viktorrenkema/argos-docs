@@ -39,3 +39,27 @@
   label: AI-Powered ADEM
   group: products
   parent: autonomous-dem
+- tag: advanced-ip-defense
+  label: Advanced IP Defense
+  group: products
+- tag: advanced-threat-prevention
+  label: Advanced Threat Prevention
+  group: products
+- tag: advanced-url-filtering
+  label: Advanced URL Filtering
+  group: products
+- tag: advanced-wildfire
+  label: Advanced Wildfire
+  group: products
+- tag: ai-access-security
+  label: AI Access Security
+  group: products
+- tag: cloud-identity-engine
+  label: Cloud Identity Engine
+  group: products
+- tag: cloud-ngfw-for-aws
+  label: Cloud NGFW for AWS
+  group: products
+- tag: cloud-ngfw-for-azure
+  label: Cloud NGFW for Azure
+  group: products
