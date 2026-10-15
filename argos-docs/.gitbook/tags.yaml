@@ -22,44 +22,44 @@
   icon: burst-new
   color: blue
 - tag: advanced-dns-security
+  group: products
   label: Advanced DNS Security
-  group: products
 - tag: autonomous-dem
+  group: products
   label: Autonomous DEM
-  group: products
 - tag: core
+  group: products
+  parent: autonomous-dem
   label: Core
-  group: products
-  parent: autonomous-dem
 - tag: access-experience-agent
+  group: products
+  parent: autonomous-dem
   label: Access Experience Agent
-  group: products
-  parent: autonomous-dem
 - tag: ai-powered-adem
-  label: AI-Powered ADEM
   group: products
   parent: autonomous-dem
+  label: AI-Powered ADEM
 - tag: advanced-ip-defense
+  group: products
   label: Advanced IP Defense
-  group: products
 - tag: advanced-threat-prevention
-  label: Advanced Threat Prevention
   group: products
+  label: Advanced Threat Preventio
 - tag: advanced-url-filtering
+  group: products
   label: Advanced URL Filtering
-  group: products
 - tag: advanced-wildfire
+  group: products
   label: Advanced Wildfire
-  group: products
 - tag: ai-access-security
+  group: products
   label: AI Access Security
-  group: products
 - tag: cloud-identity-engine
+  group: products
   label: Cloud Identity Engine
-  group: products
 - tag: cloud-ngfw-for-aws
+  group: products
   label: Cloud NGFW for AWS
-  group: products
 - tag: cloud-ngfw-for-azure
-  label: Cloud NGFW for Azure
   group: products
+  label: Cloud NGFW for Azure

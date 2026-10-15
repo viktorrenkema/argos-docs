@@ -6,7 +6,7 @@ Merge the labeled adjacent cells in each table. Verify selection, editing, unmer
 
 ### 1. Two-cell merges at every position
 
-<table><thead><tr><th width="171.99609375">A3</th><th width="188.6171875">A2</th><th width="179.671875">A4</th><th width="157.62109375">A1</th></tr></thead><tbody><tr><td>B3</td><td>B2</td><td>B4</td><td>B1</td></tr><tr><td>C3</td><td>C2</td><td>C4</td><td>C1</td></tr><tr><td>D3</td><td>D2</td><td>D4</td><td>D1</td></tr></tbody></table>
+<table><thead><tr><th width="171.99609375">COL</th><th width="188.6171875">COL</th><th width="179.671875">COL</th><th width="157.62109375">COL</th></tr></thead><tbody><tr><td>00</td><td>00</td><td>00</td><td>00</td></tr><tr><td>00</td><td>00</td><td>00</td><td>00</td></tr><tr><td>00</td><td>00</td><td>00</td><td>00</td></tr></tbody></table>
 
 Try `A1 + A2`, `B2 + B3`, and `D3 + D4`.
 
@@ -21,7 +21,10 @@ Merge the middle three cells in each row. Keep both edge cells separate.
 
 ### 3. Full-row merges
 
-<table><thead><tr><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Q5</th><th>Q6</th></tr></thead><tbody><tr><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td></tr><tr><td>Jan</td><td colspan="3">Apr</td><td>May</td><td>Jun</td></tr></tbody></table>
+| Q1  | Q2  | Q3 | Q4 | Q5  | Q6  |
+| --- | --- | -- | -- | --- | --- |
+| 10  | 20  | 30 | 40 | 50  | 60  |
+| Jan | Apr |    |    | May | Jun |
 
 Merge each row into one cell. Then unmerge the middle row only.
 
