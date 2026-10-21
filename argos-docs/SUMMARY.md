@@ -99,3 +99,4 @@
 * [Storybook Legacy (\\\<v8) Quickstart](storybook-legacy-less-than-v8-quickstart.md)
 * [Responsive viewports](responsive-viewports.md)
 * [Snapshot Forecasting (Test Feature)](snapshot-forecasting-test-feature.md)
+* [Ignoring regions](ignoring-regions.md)
